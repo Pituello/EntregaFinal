@@ -1,0 +1,771 @@
+[
+  {
+    "numero": 1,
+    "nombre": "RAG híbrido con paráfrasis",
+    "ok": true,
+    "conversacion_id": "35fcbf77-9b80-4604-9742-497cca7f3c37",
+    "phoenix": "http://localhost:6006/projects/UHJvamVjdDoy/sessions/UHJvamVjdFNlc3Npb246MTk=",
+    "chequeos": [
+      {
+        "chequeo": "terminó DONE",
+        "ok": true
+      },
+      {
+        "chequeo": "el dato validado sale de la ficha tera.md",
+        "ok": true
+      },
+      {
+        "chequeo": "la respuesta cita Latin NCAP",
+        "ok": true
+      },
+      {
+        "chequeo": "sin escalado a revisión humana",
+        "ok": true
+      }
+    ],
+    "jobs": [
+      {
+        "job_id": "35fcbf77-9b80-4604-9742-497cca7f3c37",
+        "conversacion_id": "35fcbf77-9b80-4604-9742-497cca7f3c37",
+        "estado": "DONE",
+        "tarea": "¿Qué tan seguro es el Tera en un choque? Quiero el puntaje de protección de ocupante adulto.",
+        "simulacion": {},
+        "creado_en": "2026-10-26T18:46:08.983+00:00",
+        "actualizado_en": "2026-10-26T18:46:16.600+00:00",
+        "duracion_ejecucion_s": 7.627,
+        "latencia_total_s": 7.616,
+        "finalizado_en": "2026-10-26T18:46:16.600+00:00",
+        "worker": "2964a517463a-1/w1",
+        "error": null,
+        "aprobacion": null,
+        "decision": null,
+        "resultado": {
+          "respuesta": "El Volkswagen Tera obtuvo un puntaje de protección de ocupante adulto de 89.88% en la evaluación de Latin NCAP (fuente: tera.md).",
+          "turno": 1,
+          "fuentes": [
+            "tera.md"
+          ],
+          "intervenciones_de_especialistas": 1,
+          "escalado_humano": false,
+          "validaciones_fallidas": 0,
+          "decisiones": [
+            {
+              "paso": 0,
+              "origen": "llm",
+              "siguiente": "investigador",
+              "razon": "Faltan datos específicos sobre el puntaje de protección de ocupante adulto del Tera."
+            },
+            {
+              "paso": 1,
+              "origen": "llm",
+              "siguiente": "FINALIZAR",
+              "razon": "La investigación está completa y validada, y no se requieren cálculos adicionales."
+            }
+          ],
+          "decision_humana": null,
+          "reserva": null,
+          "prompts_version": "v6"
+        },
+        "historial": [
+          {
+            "estado": "PENDING",
+            "en": "2026-10-26T18:46:08.983+00:00",
+            "detalle": "job creado y encolado"
+          },
+          {
+            "estado": "RUNNING",
+            "en": "2026-10-26T18:46:08.987+00:00",
+            "detalle": "iniciar (2964a517463a-1/w1)"
+          },
+          {
+            "estado": "DONE",
+            "en": "2026-10-26T18:46:16.600+00:00",
+            "detalle": "respuesta lista"
+          }
+        ],
+        "siguiente_paso": null
+      }
+    ]
+  },
+  {
+    "numero": 2,
+    "nombre": "Supervisor + especialistas",
+    "ok": true,
+    "conversacion_id": "69769ecc-02a5-4858-8e23-f949fd001fbe",
+    "phoenix": "http://localhost:6006/projects/UHJvamVjdDoy/sessions/UHJvamVjdFNlc3Npb246MjA=",
+    "chequeos": [
+      {
+        "chequeo": "terminó DONE",
+        "ok": true
+      },
+      {
+        "chequeo": "intervinieron investigador y analista",
+        "ok": true
+      },
+      {
+        "chequeo": "la diferencia de potencia es 49 CV (150 - 101)",
+        "ok": true
+      },
+      {
+        "chequeo": "sin escalado a revisión humana",
+        "ok": true
+      }
+    ],
+    "jobs": [
+      {
+        "job_id": "69769ecc-02a5-4858-8e23-f949fd001fbe",
+        "conversacion_id": "69769ecc-02a5-4858-8e23-f949fd001fbe",
+        "estado": "DONE",
+        "tarea": "¿Cuántos CV y cuántos Nm más tiene el Virtus Exclusive que el Tera High?",
+        "simulacion": {},
+        "creado_en": "2026-10-26T18:46:17.108+00:00",
+        "actualizado_en": "2026-10-26T18:46:43.361+00:00",
+        "duracion_ejecucion_s": 26.234,
+        "latencia_total_s": 26.253,
+        "finalizado_en": "2026-10-26T18:46:43.361+00:00",
+        "worker": "2964a517463a-1/w3",
+        "error": null,
+        "aprobacion": null,
+        "decision": null,
+        "resultado": {
+          "respuesta": "El Virtus Exclusive tiene 49 CV más y 80 Nm más que el Tera High. Estos datos provienen del catálogo de la concesionaria y las fichas técnicas de ambos modelos.",
+          "turno": 1,
+          "fuentes": [
+            "catalogo_concesionaria",
+            "tera.md",
+            "virtus.md"
+          ],
+          "intervenciones_de_especialistas": 2,
+          "escalado_humano": false,
+          "validaciones_fallidas": 0,
+          "decisiones": [
+            {
+              "paso": 0,
+              "origen": "llm",
+              "siguiente": "investigador",
+              "razon": "Faltan datos sobre la potencia y el torque de ambos modelos para poder realizar el análisis solicitado."
+            },
+            {
+              "paso": 1,
+              "origen": "llm",
+              "siguiente": "analista",
+              "razon": "Faltan los cálculos que comparan la potencia y el torque de ambos modelos."
+            },
+            {
+              "paso": 2,
+              "origen": "llm",
+              "siguiente": "FINALIZAR",
+              "razon": "Todos los datos han sido investigados y analizados correctamente, cumpliendo con los requisitos de la tarea."
+            }
+          ],
+          "decision_humana": null,
+          "reserva": null,
+          "prompts_version": "v6"
+        },
+        "historial": [
+          {
+            "estado": "PENDING",
+            "en": "2026-10-26T18:46:17.108+00:00",
+            "detalle": "job creado y encolado"
+          },
+          {
+            "estado": "RUNNING",
+            "en": "2026-10-26T18:46:17.110+00:00",
+            "detalle": "iniciar (2964a517463a-1/w3)"
+          },
+          {
+            "estado": "DONE",
+            "en": "2026-10-26T18:46:43.361+00:00",
+            "detalle": "respuesta lista"
+          }
+        ],
+        "siguiente_paso": null
+      }
+    ]
+  },
+  {
+    "numero": 3,
+    "nombre": "Conversación de dos turnos",
+    "ok": true,
+    "conversacion_id": "47f14eed-55fe-45d2-af66-1c3b8cc8f475",
+    "phoenix": "http://localhost:6006/projects/UHJvamVjdDoy/sessions/UHJvamVjdFNlc3Npb246MjE=",
+    "chequeos": [
+      {
+        "chequeo": "un segundo turno mientras corre el primero se rechaza (409)",
+        "ok": true
+      },
+      {
+        "chequeo": "los dos turnos terminaron DONE",
+        "ok": true
+      },
+      {
+        "chequeo": "el segundo es el turno 2 de la misma conversación",
+        "ok": true
+      },
+      {
+        "chequeo": "resolvió 'ese' = Nivus Sense: 150 - 101 = 49 CV",
+        "ok": true
+      },
+      {
+        "chequeo": "ningún turno terminó escalado a revisión humana",
+        "ok": true
+      },
+      {
+        "chequeo": "GET /conversaciones devuelve los 2 turnos",
+        "ok": true
+      }
+    ],
+    "jobs": [
+      {
+        "job_id": "47f14eed-55fe-45d2-af66-1c3b8cc8f475",
+        "conversacion_id": "47f14eed-55fe-45d2-af66-1c3b8cc8f475",
+        "estado": "DONE",
+        "tarea": "¿Cuántos CV y cuántos Nm tiene el Nivus Sense según el catálogo?",
+        "simulacion": {},
+        "creado_en": "2026-10-26T18:46:43.482+00:00",
+        "actualizado_en": "2026-10-26T18:46:54.696+00:00",
+        "duracion_ejecucion_s": 11.21,
+        "latencia_total_s": 11.213,
+        "finalizado_en": "2026-10-26T18:46:54.696+00:00",
+        "worker": "2964a517463a-1/w4",
+        "error": null,
+        "aprobacion": null,
+        "decision": null,
+        "resultado": {
+          "respuesta": "El Nivus Sense tiene una potencia de 101 CV y un torque de 170 Nm, según el catálogo de concesionaria.",
+          "turno": 1,
+          "fuentes": [
+            "catalogo_concesionaria"
+          ],
+          "intervenciones_de_especialistas": 2,
+          "escalado_humano": false,
+          "validaciones_fallidas": 0,
+          "decisiones": [
+            {
+              "paso": 0,
+              "origen": "llm",
+              "siguiente": "investigador",
+              "razon": "Faltan datos específicos sobre la potencia y el torque del modelo Nivus Sense."
+            },
+            {
+              "paso": 1,
+              "origen": "llm",
+              "siguiente": "analista",
+              "razon": "Faltan los cálculos para validar la información sobre la potencia y el torque del Nivus Sense."
+            },
+            {
+              "paso": 2,
+              "origen": "llm",
+              "siguiente": "FINALIZAR",
+              "razon": "Todos los datos han sido validados y no queda ninguna parte de la tarea sin cubrir."
+            }
+          ],
+          "decision_humana": null,
+          "reserva": null,
+          "prompts_version": "v6"
+        },
+        "historial": [
+          {
+            "estado": "PENDING",
+            "en": "2026-10-26T18:46:43.482+00:00",
+            "detalle": "job creado y encolado"
+          },
+          {
+            "estado": "RUNNING",
+            "en": "2026-10-26T18:46:43.485+00:00",
+            "detalle": "iniciar (2964a517463a-1/w4)"
+          },
+          {
+            "estado": "DONE",
+            "en": "2026-10-26T18:46:54.696+00:00",
+            "detalle": "respuesta lista"
+          }
+        ],
+        "siguiente_paso": null
+      },
+      {
+        "job_id": "78e91298-c6c3-417e-9eea-a0ace9b650f5",
+        "conversacion_id": "47f14eed-55fe-45d2-af66-1c3b8cc8f475",
+        "estado": "DONE",
+        "tarea": "¿Y cuántos CV más que ese tiene el Taos?",
+        "simulacion": {},
+        "creado_en": "2026-10-26T18:46:55.692+00:00",
+        "actualizado_en": "2026-10-26T18:47:15.275+00:00",
+        "duracion_ejecucion_s": 19.572,
+        "latencia_total_s": 19.582,
+        "finalizado_en": "2026-10-26T18:47:15.275+00:00",
+        "worker": "2964a517463a-1/w1",
+        "error": null,
+        "aprobacion": null,
+        "decision": null,
+        "resultado": {
+          "respuesta": "El Taos 1.4 TSI AT8 tiene 49 CV más que el Nivus Sense. El Taos tiene una potencia de 150 CV, mientras que el Nivus tiene 101 CV, según el catálogo de concesionaria.",
+          "turno": 2,
+          "fuentes": [
+            "catalogo_concesionaria"
+          ],
+          "intervenciones_de_especialistas": 4,
+          "escalado_humano": false,
+          "validaciones_fallidas": 1,
+          "decisiones": [
+            {
+              "paso": 0,
+              "origen": "llm",
+              "siguiente": "investigador",
+              "razon": "Faltan datos sobre la potencia del Taos para poder realizar la comparación con el Nivus Sense."
+            },
+            {
+              "paso": 1,
+              "origen": "llm",
+              "siguiente": "analista",
+              "razon": "Faltan los cálculos para determinar la diferencia de potencia entre el Taos y el Nivus."
+            },
+            {
+              "paso": 2,
+              "origen": "regla",
+              "siguiente": "investigador",
+              "razon": "Al análisis le faltan datos validados en este turno (los números 0 no provienen de la investigación): se manda al investigador a buscarlos en vez de reparar al analista con los mismos datos."
+            },
+            {
+              "paso": 3,
+              "origen": "llm",
+              "siguiente": "analista",
+              "razon": "Faltan cálculos para determinar la diferencia de potencia entre el Taos y el Nivus."
+            },
+            {
+              "paso": 4,
+              "origen": "llm",
+              "siguiente": "FINALIZAR",
+              "razon": "Todos los datos han sido investigados y analizados correctamente. La tarea está completa."
+            }
+          ],
+          "decision_humana": null,
+          "reserva": null,
+          "prompts_version": "v6"
+        },
+        "historial": [
+          {
+            "estado": "PENDING",
+            "en": "2026-10-26T18:46:55.692+00:00",
+            "detalle": "job creado y encolado"
+          },
+          {
+            "estado": "RUNNING",
+            "en": "2026-10-26T18:46:55.703+00:00",
+            "detalle": "iniciar (2964a517463a-1/w1)"
+          },
+          {
+            "estado": "DONE",
+            "en": "2026-10-26T18:47:15.275+00:00",
+            "detalle": "respuesta lista"
+          }
+        ],
+        "siguiente_paso": null
+      }
+    ]
+  },
+  {
+    "numero": 4,
+    "nombre": "Human-in-the-loop",
+    "ok": true,
+    "conversacion_id": "30e98fd1-aaa2-491f-9671-a31b0cf61366",
+    "phoenix": "http://localhost:6006/projects/UHJvamVjdDoy/sessions/UHJvamVjdFNlc3Npb246MjI=",
+    "chequeos": [
+      {
+        "chequeo": "se detuvo en WAITING_APPROVAL antes de reservar",
+        "ok": true
+      },
+      {
+        "chequeo": "POST /approve aceptado (202)",
+        "ok": true
+      },
+      {
+        "chequeo": "la reserva se ejecutó después de la aprobación",
+        "ok": true
+      }
+    ],
+    "jobs": [
+      {
+        "job_id": "30e98fd1-aaa2-491f-9671-a31b0cf61366",
+        "conversacion_id": "30e98fd1-aaa2-491f-9671-a31b0cf61366",
+        "estado": "DONE",
+        "tarea": "Reservá una Saveiro Extreme cabina doble en la sucursal Córdoba para el cliente Juan Pérez.",
+        "simulacion": {},
+        "creado_en": "2026-10-26T18:47:16.341+00:00",
+        "actualizado_en": "2026-10-26T18:47:31.747+00:00",
+        "duracion_ejecucion_s": 14.787,
+        "latencia_total_s": 15.406,
+        "finalizado_en": "2026-10-26T18:47:31.747+00:00",
+        "worker": "2964a517463a-1/w2",
+        "error": null,
+        "aprobacion": {
+          "accion": "reservar_unidad",
+          "motivo": "Efecto secundario: compromete una unidad del stock real de la sucursal.",
+          "pregunta": "¿Aprobás reservar 1 unidad de Saveiro Extreme cabina doble en la sucursal Córdoba para Juan Pérez?",
+          "propuesta": {
+            "version_id": "SAVEIRO-EXTREME-CD",
+            "sucursal": "Córdoba",
+            "cliente": "Juan Pérez",
+            "resumen": "1 Saveiro Extreme cabina doble en Córdoba"
+          },
+          "stock_en_catalogo": 2,
+          "tarea_original": "Reservá una Saveiro Extreme cabina doble en la sucursal Córdoba para el cliente Juan Pérez.",
+          "como_responder": "POST /tasks/{job_id}/approve con {\"aprobado\": true|false, \"revisor\": \"...\", \"comentario\": \"...\"}"
+        },
+        "decision": {
+          "aprobado": true,
+          "revisor": "Damián",
+          "comentario": "prueba del sistema"
+        },
+        "resultado": {
+          "respuesta": "La reserva de una Saveiro Extreme cabina doble en la sucursal Córdoba para el cliente Juan Pérez ha sido confirmada con éxito. El número de reserva es R-30E98FD1. Esta reserva fue aprobada por Damián tras una revisión humana. \n\nSi necesitas más información, no dudes en preguntar.",
+          "turno": 1,
+          "fuentes": [
+            "catalogo_concesionaria",
+            "saveiro.md"
+          ],
+          "intervenciones_de_especialistas": 2,
+          "escalado_humano": false,
+          "validaciones_fallidas": 0,
+          "decisiones": [
+            {
+              "paso": 0,
+              "origen": "llm",
+              "siguiente": "investigador",
+              "razon": "Faltan datos sobre la Saveiro Extreme cabina doble en la sucursal Córdoba para poder proceder con la reserva."
+            },
+            {
+              "paso": 1,
+              "origen": "llm",
+              "siguiente": "reservas",
+              "razon": "La investigación está validada y hay stock disponible para realizar la reserva."
+            },
+            {
+              "paso": 2,
+              "origen": "llm",
+              "siguiente": "FINALIZAR",
+              "razon": "La reserva de la Saveiro Extreme cabina doble en la sucursal Córdoba para el cliente Juan Pérez ha sido ejecutada y confirmada, por lo que la tarea está completa."
+            }
+          ],
+          "decision_humana": {
+            "aprobado": true,
+            "revisor": "Damián",
+            "comentario": "prueba del sistema"
+          },
+          "reserva": {
+            "ok": true,
+            "reserva_id": "R-30E98FD1",
+            "detalle": "Reserva R-30E98FD1 confirmada: Saveiro Extreme cabina doble en Córdoba para Juan Pérez (aprobada por Damián)."
+          },
+          "prompts_version": "v6"
+        },
+        "historial": [
+          {
+            "estado": "PENDING",
+            "en": "2026-10-26T18:47:16.341+00:00",
+            "detalle": "job creado y encolado"
+          },
+          {
+            "estado": "RUNNING",
+            "en": "2026-10-26T18:47:16.345+00:00",
+            "detalle": "iniciar (2964a517463a-1/w3)"
+          },
+          {
+            "estado": "WAITING_APPROVAL",
+            "en": "2026-10-26T18:47:27.902+00:00",
+            "detalle": "¿Aprobás reservar 1 unidad de Saveiro Extreme cabina doble en la sucursal Córdoba para Juan Pérez?"
+          },
+          {
+            "estado": "PENDING",
+            "en": "2026-10-26T18:47:28.512+00:00",
+            "detalle": "decisión humana: aprobado por Damián; reanudación encolada"
+          },
+          {
+            "estado": "RUNNING",
+            "en": "2026-10-26T18:47:28.515+00:00",
+            "detalle": "reanudar (2964a517463a-1/w2)"
+          },
+          {
+            "estado": "DONE",
+            "en": "2026-10-26T18:47:31.747+00:00",
+            "detalle": "respuesta lista"
+          }
+        ],
+        "siguiente_paso": null
+      }
+    ]
+  },
+  {
+    "numero": 5,
+    "nombre": "Puerta de calidad",
+    "ok": true,
+    "conversacion_id": "e32ea37e-410f-42ea-9f68-6952a3f16eb2",
+    "phoenix": "http://localhost:6006/projects/UHJvamVjdDoy/sessions/UHJvamVjdFNlc3Npb246MjM=",
+    "chequeos": [
+      {
+        "chequeo": "el validador rechazó el cálculo corrompido",
+        "ok": true
+      },
+      {
+        "chequeo": "el analista volvió a intervenir (bucle de reparación)",
+        "ok": true
+      },
+      {
+        "chequeo": "la respuesta final tiene el valor correcto (49 CV)",
+        "ok": true
+      },
+      {
+        "chequeo": "se reparó sin escalar a revisión humana",
+        "ok": true
+      }
+    ],
+    "jobs": [
+      {
+        "job_id": "e32ea37e-410f-42ea-9f68-6952a3f16eb2",
+        "conversacion_id": "e32ea37e-410f-42ea-9f68-6952a3f16eb2",
+        "estado": "DONE",
+        "tarea": "¿Cuántos CV más tiene el Virtus Exclusive que el Tera High?",
+        "simulacion": {
+          "corromper_analisis": 1
+        },
+        "creado_en": "2026-10-26T18:47:32.610+00:00",
+        "actualizado_en": "2026-10-26T18:47:46.145+00:00",
+        "duracion_ejecucion_s": 13.532,
+        "latencia_total_s": 13.535,
+        "finalizado_en": "2026-10-26T18:47:46.145+00:00",
+        "worker": "2964a517463a-1/w3",
+        "error": null,
+        "aprobacion": null,
+        "decision": null,
+        "resultado": {
+          "respuesta": "El Virtus Exclusive tiene 49 CV más que el Tera High. Esto se calcula restando la potencia del Tera High (101 CV) de la del Virtus Exclusive (150 CV). (fuente: catálogo concesionaria)",
+          "turno": 1,
+          "fuentes": [
+            "catalogo_concesionaria"
+          ],
+          "intervenciones_de_especialistas": 3,
+          "escalado_humano": false,
+          "validaciones_fallidas": 1,
+          "decisiones": [
+            {
+              "paso": 0,
+              "origen": "llm",
+              "siguiente": "investigador",
+              "razon": "Faltan datos sobre la potencia en CV de ambos modelos para poder realizar el análisis solicitado."
+            },
+            {
+              "paso": 1,
+              "origen": "llm",
+              "siguiente": "analista",
+              "razon": "Faltan los cálculos para determinar la diferencia de potencia entre las versiones solicitadas."
+            },
+            {
+              "paso": 2,
+              "origen": "regla",
+              "siguiente": "analista",
+              "razon": "Bucle de reparación (1/2): se reenvía al analista su output con los errores específicos del validador, no un reintento ciego."
+            },
+            {
+              "paso": 3,
+              "origen": "llm",
+              "siguiente": "FINALIZAR",
+              "razon": "Todos los datos han sido investigados y analizados correctamente, cumpliendo con los requisitos de la tarea."
+            }
+          ],
+          "decision_humana": null,
+          "reserva": null,
+          "prompts_version": "v6"
+        },
+        "historial": [
+          {
+            "estado": "PENDING",
+            "en": "2026-10-26T18:47:32.610+00:00",
+            "detalle": "job creado y encolado"
+          },
+          {
+            "estado": "RUNNING",
+            "en": "2026-10-26T18:47:32.613+00:00",
+            "detalle": "iniciar (2964a517463a-1/w3)"
+          },
+          {
+            "estado": "DONE",
+            "en": "2026-10-26T18:47:46.145+00:00",
+            "detalle": "respuesta lista"
+          }
+        ],
+        "siguiente_paso": null
+      }
+    ]
+  },
+  {
+    "numero": 6,
+    "nombre": "La conversación sobrevive a un reinicio",
+    "ok": true,
+    "conversacion_id": "f579e545-2e54-40ea-8384-4b400098e303",
+    "phoenix": "http://localhost:6006/projects/UHJvamVjdDoy/sessions/UHJvamVjdFNlc3Npb246MjQ=",
+    "chequeos": [
+      {
+        "chequeo": "la API y los workers volvieron después del reinicio",
+        "ok": true
+      },
+      {
+        "chequeo": "los workers son procesos nuevos (arrancaron después del reinicio)",
+        "ok": true
+      },
+      {
+        "chequeo": "el turno 2 corrió en un proceso nuevo y es el turno 2 de la conversación",
+        "ok": true
+      },
+      {
+        "chequeo": "entendió que se sigue hablando del Taos",
+        "ok": true
+      },
+      {
+        "chequeo": "ningún turno terminó escalado a revisión humana",
+        "ok": true
+      }
+    ],
+    "jobs": [
+      {
+        "job_id": "f579e545-2e54-40ea-8384-4b400098e303",
+        "conversacion_id": "f579e545-2e54-40ea-8384-4b400098e303",
+        "estado": "DONE",
+        "tarea": "¿Cuántas unidades del Taos 1.4 TSI hay en la sucursal Palermo?",
+        "simulacion": {},
+        "creado_en": "2026-10-26T18:47:46.769+00:00",
+        "actualizado_en": "2026-10-26T18:47:53.562+00:00",
+        "duracion_ejecucion_s": 6.79,
+        "latencia_total_s": 6.793,
+        "finalizado_en": "2026-10-26T18:47:53.562+00:00",
+        "worker": "2964a517463a-1/w2",
+        "error": null,
+        "aprobacion": null,
+        "decision": null,
+        "resultado": {
+          "respuesta": "En la sucursal Palermo hay 1 unidad del modelo Taos 1.4 TSI. (fuente: catalogo_concesionaria)",
+          "turno": 1,
+          "fuentes": [
+            "catalogo_concesionaria"
+          ],
+          "intervenciones_de_especialistas": 1,
+          "escalado_humano": false,
+          "validaciones_fallidas": 0,
+          "decisiones": [
+            {
+              "paso": 0,
+              "origen": "llm",
+              "siguiente": "investigador",
+              "razon": "Faltan datos sobre el stock del modelo Taos 1.4 TSI en la sucursal Palermo."
+            },
+            {
+              "paso": 1,
+              "origen": "llm",
+              "siguiente": "FINALIZAR",
+              "razon": "La investigación está completa y validada, y no se requieren cálculos adicionales."
+            }
+          ],
+          "decision_humana": null,
+          "reserva": null,
+          "prompts_version": "v6"
+        },
+        "historial": [
+          {
+            "estado": "PENDING",
+            "en": "2026-10-26T18:47:46.769+00:00",
+            "detalle": "job creado y encolado"
+          },
+          {
+            "estado": "RUNNING",
+            "en": "2026-10-26T18:47:46.771+00:00",
+            "detalle": "iniciar (2964a517463a-1/w2)"
+          },
+          {
+            "estado": "DONE",
+            "en": "2026-10-26T18:47:53.562+00:00",
+            "detalle": "respuesta lista"
+          }
+        ],
+        "siguiente_paso": null
+      },
+      {
+        "job_id": "1fbcf09b-545e-4c9a-bb71-2610bcdee6be",
+        "conversacion_id": "f579e545-2e54-40ea-8384-4b400098e303",
+        "estado": "DONE",
+        "tarea": "¿Y en la sucursal Córdoba?",
+        "simulacion": {},
+        "creado_en": "2026-10-26T18:47:59.719+00:00",
+        "actualizado_en": "2026-10-26T18:48:20.717+00:00",
+        "duracion_ejecucion_s": 20.993,
+        "latencia_total_s": 20.998,
+        "finalizado_en": "2026-10-26T18:48:20.717+00:00",
+        "worker": "2964a517463a-1/w1",
+        "error": null,
+        "aprobacion": null,
+        "decision": null,
+        "resultado": {
+          "respuesta": "En la sucursal Córdoba hay 1 unidad del modelo Taos 1.4 TSI. (fuente: catalogo_concesionaria)",
+          "turno": 2,
+          "fuentes": [
+            "catalogo_concesionaria"
+          ],
+          "intervenciones_de_especialistas": 4,
+          "escalado_humano": false,
+          "validaciones_fallidas": 1,
+          "decisiones": [
+            {
+              "paso": 0,
+              "origen": "llm",
+              "siguiente": "investigador",
+              "razon": "Falta información sobre el stock del modelo Taos 1.4 TSI en la sucursal Córdoba."
+            },
+            {
+              "paso": 1,
+              "origen": "llm",
+              "siguiente": "analista",
+              "razon": "Se necesita realizar un análisis de la diferencia en unidades entre las dos sucursales, ya que la investigación está completa."
+            },
+            {
+              "paso": 2,
+              "origen": "regla",
+              "siguiente": "investigador",
+              "razon": "Al análisis le faltan datos validados en este turno (los números 0 no provienen de la investigación): se manda al investigador a buscarlos en vez de reparar al analista con los mismos datos."
+            },
+            {
+              "paso": 3,
+              "origen": "llm",
+              "siguiente": "analista",
+              "razon": "Se necesita un análisis que calcule la diferencia de unidades entre las dos sucursales, ya que la investigación está validada y se requiere un nuevo análisis tras el rechazo anterior."
+            },
+            {
+              "paso": 4,
+              "origen": "llm",
+              "siguiente": "FINALIZAR",
+              "razon": "Se ha completado la tarea con todos los datos validados y no queda ninguna parte sin cubrir."
+            }
+          ],
+          "decision_humana": null,
+          "reserva": null,
+          "prompts_version": "v6"
+        },
+        "historial": [
+          {
+            "estado": "PENDING",
+            "en": "2026-10-26T18:47:59.720+00:00",
+            "detalle": "job creado y encolado"
+          },
+          {
+            "estado": "RUNNING",
+            "en": "2026-10-26T18:47:59.724+00:00",
+            "detalle": "iniciar (2964a517463a-1/w1)"
+          },
+          {
+            "estado": "DONE",
+            "en": "2026-10-26T18:48:20.717+00:00",
+            "detalle": "respuesta lista"
+          }
+        ],
+        "siguiente_paso": null
+      }
+    ]
+  }
+]

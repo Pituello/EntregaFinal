@@ -1,0 +1,76 @@
+# Sistema completo con un solo comando (entrega final):
+#
+#   docker compose up -d --build                  -> Redis + Phoenix + API + 1 worker
+#   docker compose up -d --scale worker=3         -> 3 procesos worker leyendo la misma cola
+#
+# API: http://localhost:8000/docs · Phoenix: http://localhost:6006
+# Requiere el .env (cp .env.example .env y completar OPENAI_API_KEY); ./run.sh lo hace solo.
+#
+# Redis 8 cumple cuatro roles: cola y estado de los jobs, checkpoints de LangGraph
+# (langgraph-checkpoint-redis necesita los módulos JSON y Search, que Redis 8 trae),
+# índice vectorial del RAG (Search, HNSW) y registro atómico de reservas.
+
+x-app: &app
+  build: .
+  image: vw-intelligence:final
+  env_file: .env
+  environment:
+    REDIS_URL: redis://redis:6379/0
+    PHOENIX_COLLECTOR_ENDPOINT: http://phoenix:6006/v1/traces
+    WORKER_EN_PROCESO: "false"
+  depends_on:
+    redis:
+      condition: service_healthy
+    phoenix:
+      condition: service_started
+  restart: unless-stopped
+
+services:
+  redis:
+    image: redis:8
+    container_name: vw-redis
+    command: ["redis-server", "--appendonly", "yes"]   # persiste en disco: jobs, conversaciones y pausas HITL sobreviven a un reinicio
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-datos:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  phoenix:
+    image: arizephoenix/phoenix:version-20.23.0   # versión con la que se probó la entrega
+    container_name: vw-phoenix
+    environment:
+      - PHOENIX_WORKING_DIR=/mnt/data
+    ports:
+      - "6006:6006"   # interfaz web + colector OTLP por HTTP (/v1/traces)
+      - "4317:4317"   # colector OTLP por gRPC
+    volumes:
+      - phoenix-datos:/mnt/data
+
+  # La API solo encola y lee estados: responde en milisegundos y escala aparte de los workers.
+  api:
+    <<: *app
+    container_name: vw-api
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health', timeout=3)"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 10s
+
+  # Workers independientes: corren el grafo. Escalan con --scale worker=N (sin container_name a propósito).
+  # Al arrancar, uno solo indexa las fichas en Redis (lock); los demás esperan y reutilizan el índice.
+  worker:
+    <<: *app
+    command: ["python", "-m", "app.worker"]
+    stop_grace_period: 30s   # SIGTERM: el job en curso vuelve a la cola para que lo retome otro worker
+
+volumes:
+  redis-datos:
+  phoenix-datos:

@@ -1,0 +1,6 @@
+# Los scripts y archivos que lee Docker van siempre con fin de línea LF (también en Windows):
+# con CRLF, bash falla con "$'\r': command not found".
+*.sh text eol=lf
+Dockerfile text eol=lf
+.env.example text eol=lf
+*.lock text eol=lf

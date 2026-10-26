@@ -1,0 +1,1725 @@
+{
+  "api": "http://localhost:8000",
+  "n": 20,
+  "consultas": [
+    "¿Cuántos CV y cuántos Nm más tiene el Virtus Exclusive que el Tera High, y cuántas unidades de esas dos versiones hay en total en la sucursal Palermo?",
+    "Según Latin NCAP, ¿cuántos puntos porcentuales de diferencia hay entre el Tera y el Nivus en protección de ocupante adulto?",
+    "Según el catálogo de la concesionaria, ¿cuánto torque más tiene el Taos que el Nivus Sense?",
+    "¿Qué porcentaje más de potencia tiene el Vento GLI que el Polo Highline?",
+    "¿Cuántas unidades de la Saveiro hay en total, sumando todas sus versiones, en la sucursal Córdoba?",
+    "¿Cuántos CV y cuántos Nm más tiene el Virtus Exclusive que el Tera High, y cuántas unidades de esas dos versiones hay en total en la sucursal Palermo?",
+    "Según Latin NCAP, ¿cuántos puntos porcentuales de diferencia hay entre el Tera y el Nivus en protección de ocupante adulto?",
+    "Según el catálogo de la concesionaria, ¿cuánto torque más tiene el Taos que el Nivus Sense?",
+    "¿Qué porcentaje más de potencia tiene el Vento GLI que el Polo Highline?",
+    "¿Cuántas unidades de la Saveiro hay en total, sumando todas sus versiones, en la sucursal Córdoba?",
+    "¿Cuántos CV y cuántos Nm más tiene el Virtus Exclusive que el Tera High, y cuántas unidades de esas dos versiones hay en total en la sucursal Palermo?",
+    "Según Latin NCAP, ¿cuántos puntos porcentuales de diferencia hay entre el Tera y el Nivus en protección de ocupante adulto?",
+    "Según el catálogo de la concesionaria, ¿cuánto torque más tiene el Taos que el Nivus Sense?",
+    "¿Qué porcentaje más de potencia tiene el Vento GLI que el Polo Highline?",
+    "¿Cuántas unidades de la Saveiro hay en total, sumando todas sus versiones, en la sucursal Córdoba?",
+    "¿Cuántos CV y cuántos Nm más tiene el Virtus Exclusive que el Tera High, y cuántas unidades de esas dos versiones hay en total en la sucursal Palermo?",
+    "Según Latin NCAP, ¿cuántos puntos porcentuales de diferencia hay entre el Tera y el Nivus en protección de ocupante adulto?",
+    "Según el catálogo de la concesionaria, ¿cuánto torque más tiene el Taos que el Nivus Sense?",
+    "¿Qué porcentaje más de potencia tiene el Vento GLI que el Polo Highline?",
+    "¿Cuántas unidades de la Saveiro hay en total, sumando todas sus versiones, en la sucursal Córdoba?"
+  ],
+  "post_ms": [
+    88.49240001291037,
+    44.25830004038289,
+    70.1755999471061,
+    72.78939994284883,
+    73.27640004223213,
+    73.15250003011897,
+    49.370799970347434,
+    74.70969995483756,
+    75.02380001824349,
+    76.84910000534728,
+    80.19820001209155,
+    77.82000000588596,
+    62.573500035796314,
+    81.42989996122196,
+    84.2619999893941,
+    83.55769998161122,
+    74.25210002111271,
+    84.66179994866252,
+    77.66379998065531,
+    79.62920004501939
+  ],
+  "duracion_total_s": 53.769061299972236,
+  "concurrencia": {
+    "jobs": 20,
+    "done": 20,
+    "fallidos": 0,
+    "procesos_worker": 1,
+    "slots_en_paralelo": 5,
+    "throughput_jobs_por_min": 22.317666907095877,
+    "cola_maxima": 15,
+    "espera_en_cola_s": {
+      "p50": 19.432000000000002,
+      "p95": 40.05565
+    },
+    "ejecucion_s": {
+      "p50": 12.9835,
+      "p95": 14.535900000000002
+    },
+    "jobs_por_worker": {
+      "2964a517463a-1": 20
+    }
+  },
+  "workers": [
+    {
+      "nombre": "2964a517463a-1",
+      "jobs_en_paralelo": 5,
+      "rag": "hibrido (BM25 + vectorial en Redis)",
+      "llm": "openai / gpt-4o-mini",
+      "desde": "2026-10-26T18:47:57.967+00:00"
+    }
+  ],
+  "latencia_api_s": {
+    "p50": 32.4835,
+    "p95": 52.60295
+  },
+  "jobs": [
+    {
+      "job_id": "af7f40bf-39dc-4b70-b5d8-52c8584fe21e",
+      "conversacion_id": "af7f40bf-39dc-4b70-b5d8-52c8584fe21e",
+      "estado": "DONE",
+      "tarea": "¿Cuántos CV y cuántos Nm más tiene el Virtus Exclusive que el Tera High, y cuántas unidades de esas dos versiones hay en total en la sucursal Palermo?",
+      "simulacion": {},
+      "creado_en": "2026-10-26T19:17:56.633+00:00",
+      "actualizado_en": "2026-10-26T19:18:47.482+00:00",
+      "duracion_ejecucion_s": 13.143,
+      "latencia_total_s": 50.85,
+      "finalizado_en": "2026-10-26T19:18:47.482+00:00",
+      "worker": "2964a517463a-1/w3",
+      "error": null,
+      "aprobacion": null,
+      "decision": null,
+      "resultado": {
+        "respuesta": "El Virtus Exclusive tiene 49 CV más y 80 Nm más que el Tera High. En total, hay 3 unidades en la sucursal Palermo: 1 del Virtus Exclusive y 2 del Tera High. (fuente: catalogo_concesionaria)",
+        "turno": 1,
+        "fuentes": [
+          "catalogo_concesionaria"
+        ],
+        "intervenciones_de_especialistas": 2,
+        "escalado_humano": false,
+        "validaciones_fallidas": 0,
+        "decisiones": [
+          {
+            "paso": 0,
+            "origen": "llm",
+            "siguiente": "investigador",
+            "razon": "Faltan datos sobre potencia, torque y stock que son necesarios para realizar el análisis solicitado."
+          },
+          {
+            "paso": 1,
+            "origen": "llm",
+            "siguiente": "analista",
+            "razon": "Se necesitan cálculos para determinar la diferencia de potencia y torque entre las versiones solicitadas."
+          },
+          {
+            "paso": 2,
+            "origen": "llm",
+            "siguiente": "FINALIZAR",
+            "razon": "Todos los datos han sido investigados y analizados correctamente. Se cuenta con la diferencia de potencia y torque, así como el stock total en la sucursal Palermo."
+          }
+        ],
+        "decision_humana": null,
+        "reserva": null,
+        "prompts_version": "v6"
+      },
+      "historial": [
+        {
+          "estado": "PENDING",
+          "en": "2026-10-26T19:17:56.633+00:00",
+          "detalle": "job creado y encolado"
+        },
+        {
+          "estado": "RUNNING",
+          "en": "2026-10-26T19:18:34.340+00:00",
+          "detalle": "iniciar (2964a517463a-1/w3)"
+        },
+        {
+          "estado": "DONE",
+          "en": "2026-10-26T19:18:47.482+00:00",
+          "detalle": "respuesta lista"
+        }
+      ],
+      "siguiente_paso": null
+    },
+    {
+      "job_id": "6ec083a9-75fa-4ebe-98d2-d692c9e61915",
+      "conversacion_id": "6ec083a9-75fa-4ebe-98d2-d692c9e61915",
+      "estado": "DONE",
+      "tarea": "Según Latin NCAP, ¿cuántos puntos porcentuales de diferencia hay entre el Tera y el Nivus en protección de ocupante adulto?",
+      "simulacion": {},
+      "creado_en": "2026-10-26T19:17:56.594+00:00",
+      "actualizado_en": "2026-10-26T19:18:10.784+00:00",
+      "duracion_ejecucion_s": 14.185,
+      "latencia_total_s": 14.19,
+      "finalizado_en": "2026-10-26T19:18:10.784+00:00",
+      "worker": "2964a517463a-1/w1",
+      "error": null,
+      "aprobacion": null,
+      "decision": null,
+      "resultado": {
+        "respuesta": "La diferencia en protección de ocupante adulto entre el Tera y el Nivus es de 2.59 puntos porcentuales, siendo el Tera con un 89.88% y el Nivus con un 92.47%. (fuentes: tera.md y nivus.md)",
+        "turno": 1,
+        "fuentes": [
+          "nivus.md",
+          "tera.md"
+        ],
+        "intervenciones_de_especialistas": 2,
+        "escalado_humano": false,
+        "validaciones_fallidas": 0,
+        "decisiones": [
+          {
+            "paso": 0,
+            "origen": "llm",
+            "siguiente": "investigador",
+            "razon": "Faltan datos sobre la protección de ocupante adulto del Tera y del Nivus en Latin NCAP para poder calcular la diferencia porcentual."
+          },
+          {
+            "paso": 1,
+            "origen": "llm",
+            "siguiente": "analista",
+            "razon": "Faltan los cálculos para determinar los puntos porcentuales de diferencia entre los puntajes de protección de ocupante adulto del Tera y el Nivus."
+          },
+          {
+            "paso": 2,
+            "origen": "llm",
+            "siguiente": "FINALIZAR",
+            "razon": "Todos los datos han sido validados y la tarea está completa."
+          }
+        ],
+        "decision_humana": null,
+        "reserva": null,
+        "prompts_version": "v6"
+      },
+      "historial": [
+        {
+          "estado": "PENDING",
+          "en": "2026-10-26T19:17:56.594+00:00",
+          "detalle": "job creado y encolado"
+        },
+        {
+          "estado": "RUNNING",
+          "en": "2026-10-26T19:17:56.599+00:00",
+          "detalle": "iniciar (2964a517463a-1/w1)"
+        },
+        {
+          "estado": "DONE",
+          "en": "2026-10-26T19:18:10.784+00:00",
+          "detalle": "respuesta lista"
+        }
+      ],
+      "siguiente_paso": null
+    },
+    {
+      "job_id": "f3a8912c-a538-4e8f-812c-ba79c3ce9a79",
+      "conversacion_id": "f3a8912c-a538-4e8f-812c-ba79c3ce9a79",
+      "estado": "DONE",
+      "tarea": "Según el catálogo de la concesionaria, ¿cuánto torque más tiene el Taos que el Nivus Sense?",
+      "simulacion": {},
+      "creado_en": "2026-10-26T19:17:56.599+00:00",
+      "actualizado_en": "2026-10-26T19:18:09.392+00:00",
+      "duracion_ejecucion_s": 12.743,
+      "latencia_total_s": 12.794,
+      "finalizado_en": "2026-10-26T19:18:09.392+00:00",
+      "worker": "2964a517463a-1/w5",
+      "error": null,
+      "aprobacion": null,
+      "decision": null,
+      "resultado": {
+        "respuesta": "El Taos tiene 80 Nm más de torque que el Nivus Sense. El torque del Taos es de 250 Nm, mientras que el del Nivus Sense es de 170 Nm (fuente: catálogo de la concesionaria).",
+        "turno": 1,
+        "fuentes": [
+          "catalogo_concesionaria"
+        ],
+        "intervenciones_de_especialistas": 2,
+        "escalado_humano": false,
+        "validaciones_fallidas": 0,
+        "decisiones": [
+          {
+            "paso": 0,
+            "origen": "llm",
+            "siguiente": "investigador",
+            "razon": "Faltan datos sobre el torque de ambos modelos para poder realizar el análisis solicitado."
+          },
+          {
+            "paso": 1,
+            "origen": "llm",
+            "siguiente": "analista",
+            "razon": "Faltan los cálculos para determinar la diferencia de torque entre los dos modelos."
+          },
+          {
+            "paso": 2,
+            "origen": "llm",
+            "siguiente": "FINALIZAR",
+            "razon": "Todos los datos han sido validados y la tarea está completa."
+          }
+        ],
+        "decision_humana": null,
+        "reserva": null,
+        "prompts_version": "v6"
+      },
+      "historial": [
+        {
+          "estado": "PENDING",
+          "en": "2026-10-26T19:17:56.599+00:00",
+          "detalle": "job creado y encolado"
+        },
+        {
+          "estado": "RUNNING",
+          "en": "2026-10-26T19:17:56.642+00:00",
+          "detalle": "iniciar (2964a517463a-1/w5)"
+        },
+        {
+          "estado": "DONE",
+          "en": "2026-10-26T19:18:09.392+00:00",
+          "detalle": "respuesta lista"
+        }
+      ],
+      "siguiente_paso": null
+    },
+    {
+      "job_id": "da90018e-22a8-4d17-80bf-f855f7c111f5",
+      "conversacion_id": "da90018e-22a8-4d17-80bf-f855f7c111f5",
+      "estado": "DONE",
+      "tarea": "¿Qué porcentaje más de potencia tiene el Vento GLI que el Polo Highline?",
+      "simulacion": {},
+      "creado_en": "2026-10-26T19:17:56.607+00:00",
+      "actualizado_en": "2026-10-26T19:18:09.788+00:00",
+      "duracion_ejecucion_s": 13.134,
+      "latencia_total_s": 13.181,
+      "finalizado_en": "2026-10-26T19:18:09.788+00:00",
+      "worker": "2964a517463a-1/w2",
+      "error": null,
+      "aprobacion": null,
+      "decision": null,
+      "resultado": {
+        "respuesta": "El Vento GLI tiene un 132.32% más de potencia que el Polo Highline. Esto se calcula a partir de las potencias de 230 CV para el Vento GLI y 99 CV para el Polo Highline, según el catálogo de la concesionaria.",
+        "turno": 1,
+        "fuentes": [
+          "catalogo_concesionaria"
+        ],
+        "intervenciones_de_especialistas": 2,
+        "escalado_humano": false,
+        "validaciones_fallidas": 0,
+        "decisiones": [
+          {
+            "paso": 0,
+            "origen": "llm",
+            "siguiente": "investigador",
+            "razon": "Faltan datos sobre la potencia de ambos modelos para poder realizar el cálculo del porcentaje."
+          },
+          {
+            "paso": 1,
+            "origen": "llm",
+            "siguiente": "analista",
+            "razon": "Los datos de potencia están validados y ahora se necesita realizar el cálculo solicitado."
+          },
+          {
+            "paso": 2,
+            "origen": "llm",
+            "siguiente": "FINALIZAR",
+            "razon": "Todos los datos han sido validados y la tarea está completa."
+          }
+        ],
+        "decision_humana": null,
+        "reserva": null,
+        "prompts_version": "v6"
+      },
+      "historial": [
+        {
+          "estado": "PENDING",
+          "en": "2026-10-26T19:17:56.607+00:00",
+          "detalle": "job creado y encolado"
+        },
+        {
+          "estado": "RUNNING",
+          "en": "2026-10-26T19:17:56.654+00:00",
+          "detalle": "iniciar (2964a517463a-1/w2)"
+        },
+        {
+          "estado": "DONE",
+          "en": "2026-10-26T19:18:09.788+00:00",
+          "detalle": "respuesta lista"
+        }
+      ],
+      "siguiente_paso": null
+    },
+    {
+      "job_id": "c1ad49b6-99a1-4285-aed4-ccdf899aa482",
+      "conversacion_id": "c1ad49b6-99a1-4285-aed4-ccdf899aa482",
+      "estado": "DONE",
+      "tarea": "¿Cuántas unidades de la Saveiro hay en total, sumando todas sus versiones, en la sucursal Córdoba?",
+      "simulacion": {},
+      "creado_en": "2026-10-26T19:17:56.609+00:00",
+      "actualizado_en": "2026-10-26T19:18:23.197+00:00",
+      "duracion_ejecucion_s": 13.804,
+      "latencia_total_s": 26.587,
+      "finalizado_en": "2026-10-26T19:18:23.197+00:00",
+      "worker": "2964a517463a-1/w5",
+      "error": null,
+      "aprobacion": null,
+      "decision": null,
+      "resultado": {
+        "respuesta": "En la sucursal Córdoba hay un total de 8 unidades de la Saveiro, sumando todas sus versiones. Este total se compone de 4 unidades de la Saveiro Trendline cabina simple, 2 unidades de la Saveiro Comfortline cabina doble y 2 unidades de la Saveiro Extreme cabina doble (fuente: catálogo_concesionaria).",
+        "turno": 1,
+        "fuentes": [
+          "catalogo_concesionaria"
+        ],
+        "intervenciones_de_especialistas": 2,
+        "escalado_humano": false,
+        "validaciones_fallidas": 0,
+        "decisiones": [
+          {
+            "paso": 0,
+            "origen": "llm",
+            "siguiente": "investigador",
+            "razon": "Faltan datos sobre el stock de la Saveiro en la sucursal Córdoba."
+          },
+          {
+            "paso": 1,
+            "origen": "llm",
+            "siguiente": "analista",
+            "razon": "Faltan los cálculos para determinar el total de unidades de la Saveiro en Córdoba."
+          },
+          {
+            "paso": 2,
+            "origen": "llm",
+            "siguiente": "FINALIZAR",
+            "razon": "Todos los datos han sido validados y la tarea está completa."
+          }
+        ],
+        "decision_humana": null,
+        "reserva": null,
+        "prompts_version": "v6"
+      },
+      "historial": [
+        {
+          "estado": "PENDING",
+          "en": "2026-10-26T19:17:56.609+00:00",
+          "detalle": "job creado y encolado"
+        },
+        {
+          "estado": "RUNNING",
+          "en": "2026-10-26T19:18:09.394+00:00",
+          "detalle": "iniciar (2964a517463a-1/w5)"
+        },
+        {
+          "estado": "DONE",
+          "en": "2026-10-26T19:18:23.197+00:00",
+          "detalle": "respuesta lista"
+        }
+      ],
+      "siguiente_paso": null
+    },
+    {
+      "job_id": "d4f98a74-c2f6-41e9-9311-198c230d4303",
+      "conversacion_id": "d4f98a74-c2f6-41e9-9311-198c230d4303",
+      "estado": "DONE",
+      "tarea": "¿Cuántos CV y cuántos Nm más tiene el Virtus Exclusive que el Tera High, y cuántas unidades de esas dos versiones hay en total en la sucursal Palermo?",
+      "simulacion": {},
+      "creado_en": "2026-10-26T19:17:56.611+00:00",
+      "actualizado_en": "2026-10-26T19:18:24.395+00:00",
+      "duracion_ejecucion_s": 14.933,
+      "latencia_total_s": 27.785,
+      "finalizado_en": "2026-10-26T19:18:24.395+00:00",
+      "worker": "2964a517463a-1/w4",
+      "error": null,
+      "aprobacion": null,
+      "decision": null,
+      "resultado": {
+        "respuesta": "El Virtus Exclusive tiene 49 CV más y 80 Nm más que el Tera High. En la sucursal Palermo hay un total de 3 unidades: 1 del Virtus Exclusive y 2 del Tera High. (fuente: catalogo_concesionaria)",
+        "turno": 1,
+        "fuentes": [
+          "catalogo_concesionaria"
+        ],
+        "intervenciones_de_especialistas": 2,
+        "escalado_humano": false,
+        "validaciones_fallidas": 0,
+        "decisiones": [
+          {
+            "paso": 0,
+            "origen": "llm",
+            "siguiente": "investigador",
+            "razon": "Faltan datos sobre potencia, torque y stock en la sucursal Palermo para poder realizar el análisis solicitado."
+          },
+          {
+            "paso": 1,
+            "origen": "llm",
+            "siguiente": "analista",
+            "razon": "Faltan los cálculos que comparan la potencia y el torque de las versiones solicitadas."
+          },
+          {
+            "paso": 2,
+            "origen": "llm",
+            "siguiente": "FINALIZAR",
+            "razon": "Todos los datos han sido investigados y analizados correctamente. Se cuenta con la diferencia de potencia y torque, así como el stock total en la sucursal Palermo."
+          }
+        ],
+        "decision_humana": null,
+        "reserva": null,
+        "prompts_version": "v6"
+      },
+      "historial": [
+        {
+          "estado": "PENDING",
+          "en": "2026-10-26T19:17:56.611+00:00",
+          "detalle": "job creado y encolado"
+        },
+        {
+          "estado": "RUNNING",
+          "en": "2026-10-26T19:18:09.464+00:00",
+          "detalle": "iniciar (2964a517463a-1/w4)"
+        },
+        {
+          "estado": "DONE",
+          "en": "2026-10-26T19:18:24.395+00:00",
+          "detalle": "respuesta lista"
+        }
+      ],
+      "siguiente_paso": null
+    },
+    {
+      "job_id": "16655be4-5351-46e5-be2c-35eeb7d64ed8",
+      "conversacion_id": "16655be4-5351-46e5-be2c-35eeb7d64ed8",
+      "estado": "DONE",
+      "tarea": "Según Latin NCAP, ¿cuántos puntos porcentuales de diferencia hay entre el Tera y el Nivus en protección de ocupante adulto?",
+      "simulacion": {},
+      "creado_en": "2026-10-26T19:17:56.613+00:00",
+      "actualizado_en": "2026-10-26T19:18:10.309+00:00",
+      "duracion_ejecucion_s": 13.686,
+      "latencia_total_s": 13.696,
+      "finalizado_en": "2026-10-26T19:18:10.309+00:00",
+      "worker": "2964a517463a-1/w3",
+      "error": null,
+      "aprobacion": null,
+      "decision": null,
+      "resultado": {
+        "respuesta": "La diferencia en protección de ocupante adulto entre el Tera y el Nivus es de 2.59 puntos porcentuales, siendo el Tera con un 89.88% y el Nivus con un 92.47%. (fuentes: tera.md y nivus.md).",
+        "turno": 1,
+        "fuentes": [
+          "nivus.md",
+          "tera.md"
+        ],
+        "intervenciones_de_especialistas": 2,
+        "escalado_humano": false,
+        "validaciones_fallidas": 0,
+        "decisiones": [
+          {
+            "paso": 0,
+            "origen": "llm",
+            "siguiente": "investigador",
+            "razon": "Faltan datos que pide la tarea sobre la protección de ocupante adulto para ambos modelos."
+          },
+          {
+            "paso": 1,
+            "origen": "llm",
+            "siguiente": "analista",
+            "razon": "Faltan los cálculos para determinar la diferencia porcentual entre los dos modelos."
+          },
+          {
+            "paso": 2,
+            "origen": "llm",
+            "siguiente": "FINALIZAR",
+            "razon": "Todos los datos han sido validados y la tarea está completa."
+          }
+        ],
+        "decision_humana": null,
+        "reserva": null,
+        "prompts_version": "v6"
+      },
+      "historial": [
+        {
+          "estado": "PENDING",
+          "en": "2026-10-26T19:17:56.613+00:00",
+          "detalle": "job creado y encolado"
+        },
+        {
+          "estado": "RUNNING",
+          "en": "2026-10-26T19:17:56.623+00:00",
+          "detalle": "iniciar (2964a517463a-1/w3)"
+        },
+        {
+          "estado": "DONE",
+          "en": "2026-10-26T19:18:10.309+00:00",
+          "detalle": "respuesta lista"
+        }
+      ],
+      "siguiente_paso": null
+    },
+    {
+      "job_id": "9f13f95d-c716-40c7-8b6e-b59136b6c0e4",
+      "conversacion_id": "9f13f95d-c716-40c7-8b6e-b59136b6c0e4",
+      "estado": "DONE",
+      "tarea": "Según el catálogo de la concesionaria, ¿cuánto torque más tiene el Taos que el Nivus Sense?",
+      "simulacion": {},
+      "creado_en": "2026-10-26T19:17:56.615+00:00",
+      "actualizado_en": "2026-10-26T19:18:21.311+00:00",
+      "duracion_ejecucion_s": 10.998,
+      "latencia_total_s": 24.695,
+      "finalizado_en": "2026-10-26T19:18:21.311+00:00",
+      "worker": "2964a517463a-1/w3",
+      "error": null,
+      "aprobacion": null,
+      "decision": null,
+      "resultado": {
+        "respuesta": "El Taos tiene 80 Nm más de torque que el Nivus Sense. El torque del Taos es de 250 Nm, mientras que el del Nivus Sense es de 170 Nm (fuente: catálogo de la concesionaria).",
+        "turno": 1,
+        "fuentes": [
+          "catalogo_concesionaria"
+        ],
+        "intervenciones_de_especialistas": 2,
+        "escalado_humano": false,
+        "validaciones_fallidas": 0,
+        "decisiones": [
+          {
+            "paso": 0,
+            "origen": "llm",
+            "siguiente": "investigador",
+            "razon": "Faltan datos sobre el torque de ambos modelos para poder realizar el análisis solicitado."
+          },
+          {
+            "paso": 1,
+            "origen": "llm",
+            "siguiente": "analista",
+            "razon": "Faltan los cálculos para determinar la diferencia de torque entre los dos modelos."
+          },
+          {
+            "paso": 2,
+            "origen": "llm",
+            "siguiente": "FINALIZAR",
+            "razon": "Todos los datos han sido investigados y analizados correctamente, cumpliendo con los requisitos de la tarea."
+          }
+        ],
+        "decision_humana": null,
+        "reserva": null,
+        "prompts_version": "v6"
+      },
+      "historial": [
+        {
+          "estado": "PENDING",
+          "en": "2026-10-26T19:17:56.615+00:00",
+          "detalle": "job creado y encolado"
+        },
+        {
+          "estado": "RUNNING",
+          "en": "2026-10-26T19:18:10.312+00:00",
+          "detalle": "iniciar (2964a517463a-1/w3)"
+        },
+        {
+          "estado": "DONE",
+          "en": "2026-10-26T19:18:21.311+00:00",
+          "detalle": "respuesta lista"
+        }
+      ],
+      "siguiente_paso": null
+    },
+    {
+      "job_id": "868446b1-c1eb-4e87-9d57-a041db114cb9",
+      "conversacion_id": "868446b1-c1eb-4e87-9d57-a041db114cb9",
+      "estado": "DONE",
+      "tarea": "¿Qué porcentaje más de potencia tiene el Vento GLI que el Polo Highline?",
+      "simulacion": {},
+      "creado_en": "2026-10-26T19:17:56.618+00:00",
+      "actualizado_en": "2026-10-26T19:18:22.757+00:00",
+      "duracion_ejecucion_s": 11.969,
+      "latencia_total_s": 26.139,
+      "finalizado_en": "2026-10-26T19:18:22.757+00:00",
+      "worker": "2964a517463a-1/w1",
+      "error": null,
+      "aprobacion": null,
+      "decision": null,
+      "resultado": {
+        "respuesta": "El Vento GLI tiene un 132.32% más de potencia que el Polo Highline. Esto se calcula a partir de las potencias de 230 CV para el Vento GLI y 99 CV para el Polo Highline, según el catálogo de la concesionaria.",
+        "turno": 1,
+        "fuentes": [
+          "catalogo_concesionaria"
+        ],
+        "intervenciones_de_especialistas": 2,
+        "escalado_humano": false,
+        "validaciones_fallidas": 0,
+        "decisiones": [
+          {
+            "paso": 0,
+            "origen": "llm",
+            "siguiente": "investigador",
+            "razon": "Faltan datos sobre la potencia de ambos modelos para poder realizar el análisis solicitado."
+          },
+          {
+            "paso": 1,
+            "origen": "llm",
+            "siguiente": "analista",
+            "razon": "Faltan los cálculos para determinar el porcentaje de diferencia de potencia entre los dos modelos."
+          },
+          {
+            "paso": 2,
+            "origen": "llm",
+            "siguiente": "FINALIZAR",
+            "razon": "Todos los datos han sido validados y la tarea está completa."
+          }
+        ],
+        "decision_humana": null,
+        "reserva": null,
+        "prompts_version": "v6"
+      },
+      "historial": [
+        {
+          "estado": "PENDING",
+          "en": "2026-10-26T19:17:56.618+00:00",
+          "detalle": "job creado y encolado"
+        },
+        {
+          "estado": "RUNNING",
+          "en": "2026-10-26T19:18:10.787+00:00",
+          "detalle": "iniciar (2964a517463a-1/w1)"
+        },
+        {
+          "estado": "DONE",
+          "en": "2026-10-26T19:18:22.757+00:00",
+          "detalle": "respuesta lista"
+        }
+      ],
+      "siguiente_paso": null
+    },
+    {
+      "job_id": "fbbdcf94-1689-469d-bf1d-db51c15ffda2",
+      "conversacion_id": "fbbdcf94-1689-469d-bf1d-db51c15ffda2",
+      "estado": "DONE",
+      "tarea": "¿Cuántas unidades de la Saveiro hay en total, sumando todas sus versiones, en la sucursal Córdoba?",
+      "simulacion": {},
+      "creado_en": "2026-10-26T19:17:56.619+00:00",
+      "actualizado_en": "2026-10-26T19:18:34.338+00:00",
+      "duracion_ejecucion_s": 13.025,
+      "latencia_total_s": 37.719,
+      "finalizado_en": "2026-10-26T19:18:34.338+00:00",
+      "worker": "2964a517463a-1/w3",
+      "error": null,
+      "aprobacion": null,
+      "decision": null,
+      "resultado": {
+        "respuesta": "En la sucursal Córdoba hay un total de 8 unidades de la Saveiro, sumando todas sus versiones. Este dato proviene del catálogo de concesionaria, donde se detallan las siguientes unidades: 4 de la versión Trendline cabina simple, 2 de la Comfortline cabina doble y 2 de la Extreme cabina doble.",
+        "turno": 1,
+        "fuentes": [
+          "catalogo_concesionaria"
+        ],
+        "intervenciones_de_especialistas": 2,
+        "escalado_humano": false,
+        "validaciones_fallidas": 0,
+        "decisiones": [
+          {
+            "paso": 0,
+            "origen": "llm",
+            "siguiente": "investigador",
+            "razon": "Faltan datos sobre el stock de la Saveiro en la sucursal Córdoba."
+          },
+          {
+            "paso": 1,
+            "origen": "llm",
+            "siguiente": "analista",
+            "razon": "Faltan los cálculos para determinar la suma total de unidades de la Saveiro en Córdoba."
+          },
+          {
+            "paso": 2,
+            "origen": "llm",
+            "siguiente": "FINALIZAR",
+            "razon": "Todos los datos han sido validados y la tarea está completa."
+          }
+        ],
+        "decision_humana": null,
+        "reserva": null,
+        "prompts_version": "v6"
+      },
+      "historial": [
+        {
+          "estado": "PENDING",
+          "en": "2026-10-26T19:17:56.619+00:00",
+          "detalle": "job creado y encolado"
+        },
+        {
+          "estado": "RUNNING",
+          "en": "2026-10-26T19:18:21.313+00:00",
+          "detalle": "iniciar (2964a517463a-1/w3)"
+        },
+        {
+          "estado": "DONE",
+          "en": "2026-10-26T19:18:34.338+00:00",
+          "detalle": "respuesta lista"
+        }
+      ],
+      "siguiente_paso": null
+    },
+    {
+      "job_id": "4ef62ae7-7f9b-4259-a475-2ab38ecf1e7e",
+      "conversacion_id": "4ef62ae7-7f9b-4259-a475-2ab38ecf1e7e",
+      "estado": "DONE",
+      "tarea": "¿Cuántos CV y cuántos Nm más tiene el Virtus Exclusive que el Tera High, y cuántas unidades de esas dos versiones hay en total en la sucursal Palermo?",
+      "simulacion": {},
+      "creado_en": "2026-10-26T19:17:56.624+00:00",
+      "actualizado_en": "2026-10-26T19:18:37.831+00:00",
+      "duracion_ejecucion_s": 13.433,
+      "latencia_total_s": 41.208,
+      "finalizado_en": "2026-10-26T19:18:37.831+00:00",
+      "worker": "2964a517463a-1/w4",
+      "error": null,
+      "aprobacion": null,
+      "decision": null,
+      "resultado": {
+        "respuesta": "El Virtus Exclusive tiene 49 CV más y 80 Nm más que el Tera High. En total, hay 3 unidades disponibles en la sucursal Palermo (1 del Virtus Exclusive y 2 del Tera High). \n\nEstos datos provienen del catálogo de concesionaria.",
+        "turno": 1,
+        "fuentes": [
+          "catalogo_concesionaria"
+        ],
+        "intervenciones_de_especialistas": 2,
+        "escalado_humano": false,
+        "validaciones_fallidas": 0,
+        "decisiones": [
+          {
+            "paso": 0,
+            "origen": "llm",
+            "siguiente": "investigador",
+            "razon": "Faltan datos sobre potencia, torque y stock en la sucursal Palermo para realizar el análisis solicitado."
+          },
+          {
+            "paso": 1,
+            "origen": "llm",
+            "siguiente": "analista",
+            "razon": "Faltan los cálculos para determinar la diferencia de potencia y torque entre las versiones solicitadas."
+          },
+          {
+            "paso": 2,
+            "origen": "llm",
+            "siguiente": "FINALIZAR",
+            "razon": "Todos los datos han sido investigados y analizados correctamente. Se cuenta con la diferencia de potencia y torque, así como el stock total en la sucursal Palermo."
+          }
+        ],
+        "decision_humana": null,
+        "reserva": null,
+        "prompts_version": "v6"
+      },
+      "historial": [
+        {
+          "estado": "PENDING",
+          "en": "2026-10-26T19:17:56.624+00:00",
+          "detalle": "job creado y encolado"
+        },
+        {
+          "estado": "RUNNING",
+          "en": "2026-10-26T19:18:24.397+00:00",
+          "detalle": "iniciar (2964a517463a-1/w4)"
+        },
+        {
+          "estado": "DONE",
+          "en": "2026-10-26T19:18:37.831+00:00",
+          "detalle": "respuesta lista"
+        }
+      ],
+      "siguiente_paso": null
+    },
+    {
+      "job_id": "9d730eba-b19c-434c-a53d-6d7d41cc8d99",
+      "conversacion_id": "9d730eba-b19c-434c-a53d-6d7d41cc8d99",
+      "estado": "DONE",
+      "tarea": "Según Latin NCAP, ¿cuántos puntos porcentuales de diferencia hay entre el Tera y el Nivus en protección de ocupante adulto?",
+      "simulacion": {},
+      "creado_en": "2026-10-26T19:17:56.621+00:00",
+      "actualizado_en": "2026-10-26T19:18:36.142+00:00",
+      "duracion_ejecucion_s": 12.942,
+      "latencia_total_s": 39.52,
+      "finalizado_en": "2026-10-26T19:18:36.142+00:00",
+      "worker": "2964a517463a-1/w5",
+      "error": null,
+      "aprobacion": null,
+      "decision": null,
+      "resultado": {
+        "respuesta": "La diferencia en protección de ocupante adulto entre el Tera y el Nivus es de 2.59 puntos porcentuales, siendo el Tera con un 89.88% y el Nivus con un 92.47%. (fuentes: tera.md y nivus.md)",
+        "turno": 1,
+        "fuentes": [
+          "nivus.md",
+          "tera.md"
+        ],
+        "intervenciones_de_especialistas": 2,
+        "escalado_humano": false,
+        "validaciones_fallidas": 0,
+        "decisiones": [
+          {
+            "paso": 0,
+            "origen": "llm",
+            "siguiente": "investigador",
+            "razon": "Faltan datos que pide la tarea sobre la protección de ocupante adulto del Tera y del Nivus."
+          },
+          {
+            "paso": 1,
+            "origen": "llm",
+            "siguiente": "analista",
+            "razon": "Faltan los cálculos para determinar la diferencia porcentual entre los dos modelos."
+          },
+          {
+            "paso": 2,
+            "origen": "llm",
+            "siguiente": "FINALIZAR",
+            "razon": "Todos los datos han sido validados y la tarea está completa."
+          }
+        ],
+        "decision_humana": null,
+        "reserva": null,
+        "prompts_version": "v6"
+      },
+      "historial": [
+        {
+          "estado": "PENDING",
+          "en": "2026-10-26T19:17:56.621+00:00",
+          "detalle": "job creado y encolado"
+        },
+        {
+          "estado": "RUNNING",
+          "en": "2026-10-26T19:18:23.198+00:00",
+          "detalle": "iniciar (2964a517463a-1/w5)"
+        },
+        {
+          "estado": "DONE",
+          "en": "2026-10-26T19:18:36.142+00:00",
+          "detalle": "respuesta lista"
+        }
+      ],
+      "siguiente_paso": null
+    },
+    {
+      "job_id": "35bb4b07-4b25-4396-b597-906d995c1666",
+      "conversacion_id": "35bb4b07-4b25-4396-b597-906d995c1666",
+      "estado": "DONE",
+      "tarea": "Según el catálogo de la concesionaria, ¿cuánto torque más tiene el Taos que el Nivus Sense?",
+      "simulacion": {},
+      "creado_en": "2026-10-26T19:17:56.627+00:00",
+      "actualizado_en": "2026-10-26T19:18:09.462+00:00",
+      "duracion_ejecucion_s": 12.825,
+      "latencia_total_s": 12.836,
+      "finalizado_en": "2026-10-26T19:18:09.462+00:00",
+      "worker": "2964a517463a-1/w4",
+      "error": null,
+      "aprobacion": null,
+      "decision": null,
+      "resultado": {
+        "respuesta": "El Taos tiene 80 Nm más de torque que el Nivus Sense. El torque del Taos es de 250 Nm, mientras que el del Nivus Sense es de 170 Nm (fuente: catálogo de la concesionaria).",
+        "turno": 1,
+        "fuentes": [
+          "catalogo_concesionaria"
+        ],
+        "intervenciones_de_especialistas": 2,
+        "escalado_humano": false,
+        "validaciones_fallidas": 0,
+        "decisiones": [
+          {
+            "paso": 0,
+            "origen": "llm",
+            "siguiente": "investigador",
+            "razon": "Faltan datos sobre el torque de ambos modelos para poder realizar el análisis solicitado."
+          },
+          {
+            "paso": 1,
+            "origen": "llm",
+            "siguiente": "analista",
+            "razon": "Faltan los cálculos para determinar la diferencia de torque entre los dos modelos."
+          },
+          {
+            "paso": 2,
+            "origen": "llm",
+            "siguiente": "FINALIZAR",
+            "razon": "Todos los datos han sido validados y la tarea está completa."
+          }
+        ],
+        "decision_humana": null,
+        "reserva": null,
+        "prompts_version": "v6"
+      },
+      "historial": [
+        {
+          "estado": "PENDING",
+          "en": "2026-10-26T19:17:56.627+00:00",
+          "detalle": "job creado y encolado"
+        },
+        {
+          "estado": "RUNNING",
+          "en": "2026-10-26T19:17:56.635+00:00",
+          "detalle": "iniciar (2964a517463a-1/w4)"
+        },
+        {
+          "estado": "DONE",
+          "en": "2026-10-26T19:18:09.463+00:00",
+          "detalle": "respuesta lista"
+        }
+      ],
+      "siguiente_paso": null
+    },
+    {
+      "job_id": "6563ef1e-05f2-4baf-8232-30a628b529d3",
+      "conversacion_id": "6563ef1e-05f2-4baf-8232-30a628b529d3",
+      "estado": "DONE",
+      "tarea": "¿Qué porcentaje más de potencia tiene el Vento GLI que el Polo Highline?",
+      "simulacion": {},
+      "creado_en": "2026-10-26T19:17:56.629+00:00",
+      "actualizado_en": "2026-10-26T19:18:45.424+00:00",
+      "duracion_ejecucion_s": 11.592,
+      "latencia_total_s": 48.795,
+      "finalizado_en": "2026-10-26T19:18:45.424+00:00",
+      "worker": "2964a517463a-1/w1",
+      "error": null,
+      "aprobacion": null,
+      "decision": null,
+      "resultado": {
+        "respuesta": "El Vento GLI tiene un 132.32% más de potencia que el Polo Highline. Esto se calcula a partir de las potencias de 230 CV para el Vento GLI y 99 CV para el Polo Highline, según el catálogo de la concesionaria.",
+        "turno": 1,
+        "fuentes": [
+          "catalogo_concesionaria"
+        ],
+        "intervenciones_de_especialistas": 2,
+        "escalado_humano": false,
+        "validaciones_fallidas": 0,
+        "decisiones": [
+          {
+            "paso": 0,
+            "origen": "llm",
+            "siguiente": "investigador",
+            "razon": "Faltan datos sobre la potencia de ambos modelos para poder realizar el cálculo del porcentaje."
+          },
+          {
+            "paso": 1,
+            "origen": "llm",
+            "siguiente": "analista",
+            "razon": "Faltan los cálculos para determinar el porcentaje de diferencia de potencia entre los dos modelos."
+          },
+          {
+            "paso": 2,
+            "origen": "llm",
+            "siguiente": "FINALIZAR",
+            "razon": "Todos los datos han sido investigados y analizados correctamente, cumpliendo con los requisitos de la tarea."
+          }
+        ],
+        "decision_humana": null,
+        "reserva": null,
+        "prompts_version": "v6"
+      },
+      "historial": [
+        {
+          "estado": "PENDING",
+          "en": "2026-10-26T19:17:56.629+00:00",
+          "detalle": "job creado y encolado"
+        },
+        {
+          "estado": "RUNNING",
+          "en": "2026-10-26T19:18:33.833+00:00",
+          "detalle": "iniciar (2964a517463a-1/w1)"
+        },
+        {
+          "estado": "DONE",
+          "en": "2026-10-26T19:18:45.424+00:00",
+          "detalle": "respuesta lista"
+        }
+      ],
+      "siguiente_paso": null
+    },
+    {
+      "job_id": "66c4cdf6-3735-423c-befa-937d852afac7",
+      "conversacion_id": "66c4cdf6-3735-423c-befa-937d852afac7",
+      "estado": "DONE",
+      "tarea": "¿Cuántas unidades de la Saveiro hay en total, sumando todas sus versiones, en la sucursal Córdoba?",
+      "simulacion": {},
+      "creado_en": "2026-10-26T19:17:56.634+00:00",
+      "actualizado_en": "2026-10-26T19:18:47.361+00:00",
+      "duracion_ejecucion_s": 11.214,
+      "latencia_total_s": 50.726,
+      "finalizado_en": "2026-10-26T19:18:47.360+00:00",
+      "worker": "2964a517463a-1/w5",
+      "error": null,
+      "aprobacion": null,
+      "decision": null,
+      "resultado": {
+        "respuesta": "En la sucursal Córdoba hay un total de 8 unidades de la Saveiro, sumando todas sus versiones. Este dato proviene del catálogo de concesionaria, donde se detallan las siguientes unidades: 4 de la versión Trendline cabina simple, 2 de la Comfortline cabina doble y 2 de la Extreme cabina doble.",
+        "turno": 1,
+        "fuentes": [
+          "catalogo_concesionaria"
+        ],
+        "intervenciones_de_especialistas": 2,
+        "escalado_humano": false,
+        "validaciones_fallidas": 0,
+        "decisiones": [
+          {
+            "paso": 0,
+            "origen": "llm",
+            "siguiente": "investigador",
+            "razon": "Faltan datos sobre el stock de la Saveiro en la sucursal Córdoba."
+          },
+          {
+            "paso": 1,
+            "origen": "llm",
+            "siguiente": "analista",
+            "razon": "Faltan los cálculos para determinar la suma total de unidades de la Saveiro en Córdoba."
+          },
+          {
+            "paso": 2,
+            "origen": "llm",
+            "siguiente": "FINALIZAR",
+            "razon": "Todos los datos han sido validados y la tarea está completa."
+          }
+        ],
+        "decision_humana": null,
+        "reserva": null,
+        "prompts_version": "v6"
+      },
+      "historial": [
+        {
+          "estado": "PENDING",
+          "en": "2026-10-26T19:17:56.634+00:00",
+          "detalle": "job creado y encolado"
+        },
+        {
+          "estado": "RUNNING",
+          "en": "2026-10-26T19:18:36.147+00:00",
+          "detalle": "iniciar (2964a517463a-1/w5)"
+        },
+        {
+          "estado": "DONE",
+          "en": "2026-10-26T19:18:47.361+00:00",
+          "detalle": "respuesta lista"
+        }
+      ],
+      "siguiente_paso": null
+    },
+    {
+      "job_id": "b30a8484-75cf-47a8-96e6-8358961ee745",
+      "conversacion_id": "b30a8484-75cf-47a8-96e6-8358961ee745",
+      "estado": "DONE",
+      "tarea": "¿Cuántos CV y cuántos Nm más tiene el Virtus Exclusive que el Tera High, y cuántas unidades de esas dos versiones hay en total en la sucursal Palermo?",
+      "simulacion": {},
+      "creado_en": "2026-10-26T19:17:56.638+00:00",
+      "actualizado_en": "2026-10-26T19:18:50.094+00:00",
+      "duracion_ejecucion_s": 13.461,
+      "latencia_total_s": 53.457,
+      "finalizado_en": "2026-10-26T19:18:50.094+00:00",
+      "worker": "2964a517463a-1/w2",
+      "error": null,
+      "aprobacion": null,
+      "decision": null,
+      "resultado": {
+        "respuesta": "El Virtus Exclusive tiene 49 CV más y 80 Nm más que el Tera High. En total, hay 3 unidades de estas versiones en la sucursal Palermo (1 del Virtus Exclusive y 2 del Tera High). \n\n(Fuentes: catálogo_concesionaria)",
+        "turno": 1,
+        "fuentes": [
+          "catalogo_concesionaria"
+        ],
+        "intervenciones_de_especialistas": 2,
+        "escalado_humano": false,
+        "validaciones_fallidas": 0,
+        "decisiones": [
+          {
+            "paso": 0,
+            "origen": "llm",
+            "siguiente": "investigador",
+            "razon": "Faltan datos sobre potencia, torque y stock en la sucursal Palermo para realizar el análisis solicitado."
+          },
+          {
+            "paso": 1,
+            "origen": "llm",
+            "siguiente": "analista",
+            "razon": "Se necesitan cálculos para determinar la diferencia de potencia y torque entre las versiones solicitadas."
+          },
+          {
+            "paso": 2,
+            "origen": "llm",
+            "siguiente": "FINALIZAR",
+            "razon": "Todos los datos han sido investigados y analizados correctamente. Se cuenta con la diferencia de potencia y torque, así como el stock total en la sucursal Palermo."
+          }
+        ],
+        "decision_humana": null,
+        "reserva": null,
+        "prompts_version": "v6"
+      },
+      "historial": [
+        {
+          "estado": "PENDING",
+          "en": "2026-10-26T19:17:56.638+00:00",
+          "detalle": "job creado y encolado"
+        },
+        {
+          "estado": "RUNNING",
+          "en": "2026-10-26T19:18:36.635+00:00",
+          "detalle": "iniciar (2964a517463a-1/w2)"
+        },
+        {
+          "estado": "DONE",
+          "en": "2026-10-26T19:18:50.094+00:00",
+          "detalle": "respuesta lista"
+        }
+      ],
+      "siguiente_paso": null
+    },
+    {
+      "job_id": "20bec012-fbfd-4d03-ad0c-f0989ad67727",
+      "conversacion_id": "20bec012-fbfd-4d03-ad0c-f0989ad67727",
+      "estado": "DONE",
+      "tarea": "Según Latin NCAP, ¿cuántos puntos porcentuales de diferencia hay entre el Tera y el Nivus en protección de ocupante adulto?",
+      "simulacion": {},
+      "creado_en": "2026-10-26T19:17:56.641+00:00",
+      "actualizado_en": "2026-10-26T19:18:24.306+00:00",
+      "duracion_ejecucion_s": 14.515,
+      "latencia_total_s": 27.664,
+      "finalizado_en": "2026-10-26T19:18:24.306+00:00",
+      "worker": "2964a517463a-1/w2",
+      "error": null,
+      "aprobacion": null,
+      "decision": null,
+      "resultado": {
+        "respuesta": "La diferencia en protección de ocupante adulto entre el Tera y el Nivus es de 2.59 puntos porcentuales, siendo el Tera con un 89.88% y el Nivus con un 92.47%. (fuentes: tera.md y nivus.md).",
+        "turno": 1,
+        "fuentes": [
+          "nivus.md",
+          "tera.md"
+        ],
+        "intervenciones_de_especialistas": 2,
+        "escalado_humano": false,
+        "validaciones_fallidas": 0,
+        "decisiones": [
+          {
+            "paso": 0,
+            "origen": "llm",
+            "siguiente": "investigador",
+            "razon": "Faltan datos sobre la protección de ocupante adulto del Tera y del Nivus en Latin NCAP para poder calcular la diferencia porcentual."
+          },
+          {
+            "paso": 1,
+            "origen": "llm",
+            "siguiente": "analista",
+            "razon": "Se cuenta con los datos validados de protección de ocupante adulto para ambos modelos y ahora se necesita realizar el cálculo de la diferencia porcentual."
+          },
+          {
+            "paso": 2,
+            "origen": "llm",
+            "siguiente": "FINALIZAR",
+            "razon": "Todos los datos han sido validados y la tarea está completa."
+          }
+        ],
+        "decision_humana": null,
+        "reserva": null,
+        "prompts_version": "v6"
+      },
+      "historial": [
+        {
+          "estado": "PENDING",
+          "en": "2026-10-26T19:17:56.641+00:00",
+          "detalle": "job creado y encolado"
+        },
+        {
+          "estado": "RUNNING",
+          "en": "2026-10-26T19:18:09.790+00:00",
+          "detalle": "iniciar (2964a517463a-1/w2)"
+        },
+        {
+          "estado": "DONE",
+          "en": "2026-10-26T19:18:24.306+00:00",
+          "detalle": "respuesta lista"
+        }
+      ],
+      "siguiente_paso": null
+    },
+    {
+      "job_id": "89f6a756-a736-4734-9dd6-90546f2c1d7e",
+      "conversacion_id": "89f6a756-a736-4734-9dd6-90546f2c1d7e",
+      "estado": "DONE",
+      "tarea": "Según el catálogo de la concesionaria, ¿cuánto torque más tiene el Taos que el Nivus Sense?",
+      "simulacion": {},
+      "creado_en": "2026-10-26T19:17:56.644+00:00",
+      "actualizado_en": "2026-10-26T19:18:49.201+00:00",
+      "duracion_ejecucion_s": 11.369,
+      "latencia_total_s": 52.558,
+      "finalizado_en": "2026-10-26T19:18:49.201+00:00",
+      "worker": "2964a517463a-1/w4",
+      "error": null,
+      "aprobacion": null,
+      "decision": null,
+      "resultado": {
+        "respuesta": "El Taos tiene 80 Nm más de torque que el Nivus Sense. El torque del Taos es de 250 Nm, mientras que el del Nivus Sense es de 170 Nm (fuente: catálogo de la concesionaria).",
+        "turno": 1,
+        "fuentes": [
+          "catalogo_concesionaria"
+        ],
+        "intervenciones_de_especialistas": 2,
+        "escalado_humano": false,
+        "validaciones_fallidas": 0,
+        "decisiones": [
+          {
+            "paso": 0,
+            "origen": "llm",
+            "siguiente": "investigador",
+            "razon": "Faltan datos sobre el torque de ambos modelos para poder realizar el análisis solicitado."
+          },
+          {
+            "paso": 1,
+            "origen": "llm",
+            "siguiente": "analista",
+            "razon": "Faltan los cálculos para determinar la diferencia de torque entre los dos modelos."
+          },
+          {
+            "paso": 2,
+            "origen": "llm",
+            "siguiente": "FINALIZAR",
+            "razon": "Todos los datos han sido investigados y analizados correctamente, cumpliendo con los requisitos de la tarea."
+          }
+        ],
+        "decision_humana": null,
+        "reserva": null,
+        "prompts_version": "v6"
+      },
+      "historial": [
+        {
+          "estado": "PENDING",
+          "en": "2026-10-26T19:17:56.644+00:00",
+          "detalle": "job creado y encolado"
+        },
+        {
+          "estado": "RUNNING",
+          "en": "2026-10-26T19:18:37.834+00:00",
+          "detalle": "iniciar (2964a517463a-1/w4)"
+        },
+        {
+          "estado": "DONE",
+          "en": "2026-10-26T19:18:49.202+00:00",
+          "detalle": "respuesta lista"
+        }
+      ],
+      "siguiente_paso": null
+    },
+    {
+      "job_id": "13271d2e-6f3d-4fbd-9fed-9aa374c99c2c",
+      "conversacion_id": "13271d2e-6f3d-4fbd-9fed-9aa374c99c2c",
+      "estado": "DONE",
+      "tarea": "¿Qué porcentaje más de potencia tiene el Vento GLI que el Polo Highline?",
+      "simulacion": {},
+      "creado_en": "2026-10-26T19:17:56.648+00:00",
+      "actualizado_en": "2026-10-26T19:18:33.830+00:00",
+      "duracion_ejecucion_s": 11.071,
+      "latencia_total_s": 37.182,
+      "finalizado_en": "2026-10-26T19:18:33.830+00:00",
+      "worker": "2964a517463a-1/w1",
+      "error": null,
+      "aprobacion": null,
+      "decision": null,
+      "resultado": {
+        "respuesta": "El Vento GLI tiene un 132.32% más de potencia que el Polo Highline. Esto se calcula a partir de las potencias de 230 CV para el Vento GLI y 99 CV para el Polo Highline, según el catálogo de la concesionaria.",
+        "turno": 1,
+        "fuentes": [
+          "catalogo_concesionaria"
+        ],
+        "intervenciones_de_especialistas": 2,
+        "escalado_humano": false,
+        "validaciones_fallidas": 0,
+        "decisiones": [
+          {
+            "paso": 0,
+            "origen": "llm",
+            "siguiente": "investigador",
+            "razon": "Faltan datos sobre la potencia de ambos modelos para poder realizar el cálculo del porcentaje."
+          },
+          {
+            "paso": 1,
+            "origen": "llm",
+            "siguiente": "analista",
+            "razon": "Faltan los cálculos para determinar el porcentaje de diferencia de potencia entre los dos modelos."
+          },
+          {
+            "paso": 2,
+            "origen": "llm",
+            "siguiente": "FINALIZAR",
+            "razon": "Todos los datos han sido investigados y analizados correctamente, cumpliendo con los requisitos de la tarea."
+          }
+        ],
+        "decision_humana": null,
+        "reserva": null,
+        "prompts_version": "v6"
+      },
+      "historial": [
+        {
+          "estado": "PENDING",
+          "en": "2026-10-26T19:17:56.648+00:00",
+          "detalle": "job creado y encolado"
+        },
+        {
+          "estado": "RUNNING",
+          "en": "2026-10-26T19:18:22.759+00:00",
+          "detalle": "iniciar (2964a517463a-1/w1)"
+        },
+        {
+          "estado": "DONE",
+          "en": "2026-10-26T19:18:33.831+00:00",
+          "detalle": "respuesta lista"
+        }
+      ],
+      "siguiente_paso": null
+    },
+    {
+      "job_id": "55091cc6-b8d3-46e1-90a0-8d8cbb4e6184",
+      "conversacion_id": "55091cc6-b8d3-46e1-90a0-8d8cbb4e6184",
+      "estado": "DONE",
+      "tarea": "¿Cuántas unidades de la Saveiro hay en total, sumando todas sus versiones, en la sucursal Córdoba?",
+      "simulacion": {},
+      "creado_en": "2026-10-26T19:17:56.651+00:00",
+      "actualizado_en": "2026-10-26T19:18:36.631+00:00",
+      "duracion_ejecucion_s": 12.323,
+      "latencia_total_s": 39.98,
+      "finalizado_en": "2026-10-26T19:18:36.631+00:00",
+      "worker": "2964a517463a-1/w2",
+      "error": null,
+      "aprobacion": null,
+      "decision": null,
+      "resultado": {
+        "respuesta": "El total de unidades de la Saveiro en la sucursal Córdoba, sumando todas sus versiones, es de 8 unidades. Este total se compone de 4 unidades de Saveiro Trendline cabina simple, 2 unidades de Saveiro Comfortline cabina doble y 2 unidades de Saveiro Extreme cabina doble (fuente: catálogo_concesionaria). La información ha sido validada y confirmada.",
+        "turno": 1,
+        "fuentes": [
+          "catalogo_concesionaria"
+        ],
+        "intervenciones_de_especialistas": 2,
+        "escalado_humano": false,
+        "validaciones_fallidas": 0,
+        "decisiones": [
+          {
+            "paso": 0,
+            "origen": "llm",
+            "siguiente": "investigador",
+            "razon": "Faltan datos sobre el stock de la Saveiro en la sucursal Córdoba."
+          },
+          {
+            "paso": 1,
+            "origen": "llm",
+            "siguiente": "analista",
+            "razon": "Faltan los cálculos para determinar el total de unidades de la Saveiro en Córdoba."
+          },
+          {
+            "paso": 2,
+            "origen": "llm",
+            "siguiente": "FINALIZAR",
+            "razon": "Todos los datos han sido validados y la tarea está completa."
+          }
+        ],
+        "decision_humana": null,
+        "reserva": null,
+        "prompts_version": "v6"
+      },
+      "historial": [
+        {
+          "estado": "PENDING",
+          "en": "2026-10-26T19:17:56.651+00:00",
+          "detalle": "job creado y encolado"
+        },
+        {
+          "estado": "RUNNING",
+          "en": "2026-10-26T19:18:24.307+00:00",
+          "detalle": "iniciar (2964a517463a-1/w2)"
+        },
+        {
+          "estado": "DONE",
+          "en": "2026-10-26T19:18:36.632+00:00",
+          "detalle": "respuesta lista"
+        }
+      ],
+      "siguiente_paso": null
+    }
+  ],
+  "phoenix": {
+    "por_job": {
+      "af7f40bf-39dc-4b70-b5d8-52c8584fe21e": {
+        "trazas": 1,
+        "costo_usd": 0.00147405,
+        "tokens": 8682.0,
+        "latencia_ms": [
+          13141.004
+        ],
+        "trace_ids": [
+          "0a39cd26f79598b9c259ea2192fbafd7"
+        ],
+        "completa": true
+      },
+      "6ec083a9-75fa-4ebe-98d2-d692c9e61915": {
+        "trazas": 1,
+        "costo_usd": 0.0017859,
+        "tokens": 10253.0,
+        "latencia_ms": [
+          14180.16
+        ],
+        "trace_ids": [
+          "2493e34ea3cb32d04c38a68072c5e3fe"
+        ],
+        "completa": true
+      },
+      "f3a8912c-a538-4e8f-812c-ba79c3ce9a79": {
+        "trazas": 1,
+        "costo_usd": 0.0012066,
+        "tokens": 7348.0,
+        "latencia_ms": [
+          12742.201
+        ],
+        "trace_ids": [
+          "9e9b8b8a784c9d5b721dc9777ec31c74"
+        ],
+        "completa": true
+      },
+      "da90018e-22a8-4d17-80bf-f855f7c111f5": {
+        "trazas": 1,
+        "costo_usd": 0.0013432499999999998,
+        "tokens": 7593.0,
+        "latencia_ms": [
+          13131.657000000001
+        ],
+        "trace_ids": [
+          "b6460fb425ffc6f8baed81e9dc397b01"
+        ],
+        "completa": true
+      },
+      "c1ad49b6-99a1-4285-aed4-ccdf899aa482": {
+        "trazas": 1,
+        "costo_usd": 0.0013465499999999997,
+        "tokens": 7594.0,
+        "latencia_ms": [
+          13801.541000000001
+        ],
+        "trace_ids": [
+          "3a2b22241bb172d7123c39a81eb9dd00"
+        ],
+        "completa": true
+      },
+      "d4f98a74-c2f6-41e9-9311-198c230d4303": {
+        "trazas": 1,
+        "costo_usd": 0.0016094999999999998,
+        "tokens": 8717.0,
+        "latencia_ms": [
+          14930.313
+        ],
+        "trace_ids": [
+          "ac9655afb39b60a71987663ac90ec6a5"
+        ],
+        "completa": true
+      },
+      "16655be4-5351-46e5-be2c-35eeb7d64ed8": {
+        "trazas": 1,
+        "costo_usd": 0.0017563499999999998,
+        "tokens": 10182.0,
+        "latencia_ms": [
+          13682.997
+        ],
+        "trace_ids": [
+          "091b55828557503b6463259f6900d699"
+        ],
+        "completa": true
+      },
+      "9f13f95d-c716-40c7-8b6e-b59136b6c0e4": {
+        "trazas": 1,
+        "costo_usd": 0.0012984,
+        "tokens": 7357.0,
+        "latencia_ms": [
+          10997.985999999999
+        ],
+        "trace_ids": [
+          "94bbabad018fb657cf4095f3f5c04aa5"
+        ],
+        "completa": true
+      },
+      "868446b1-c1eb-4e87-9d57-a041db114cb9": {
+        "trazas": 1,
+        "costo_usd": 0.0013444499999999999,
+        "tokens": 7595.0,
+        "latencia_ms": [
+          11969.099999999999
+        ],
+        "trace_ids": [
+          "175be4d311cfbbab247778b5adbae531"
+        ],
+        "completa": true
+      },
+      "fbbdcf94-1689-469d-bf1d-db51c15ffda2": {
+        "trazas": 1,
+        "costo_usd": 0.0012430499999999999,
+        "tokens": 7571.0,
+        "latencia_ms": [
+          13024.335000000001
+        ],
+        "trace_ids": [
+          "f7e38413a8d243723b1e4a942399e3ba"
+        ],
+        "completa": true
+      },
+      "4ef62ae7-7f9b-4259-a475-2ab38ecf1e7e": {
+        "trazas": 1,
+        "costo_usd": 0.0015980999999999999,
+        "tokens": 8671.0,
+        "latencia_ms": [
+          13432.934
+        ],
+        "trace_ids": [
+          "dab6d86cda0ad3e38b13c0b47fafa6f6"
+        ],
+        "completa": true
+      },
+      "9d730eba-b19c-434c-a53d-6d7d41cc8d99": {
+        "trazas": 1,
+        "costo_usd": 0.0017575499999999999,
+        "tokens": 10181.0,
+        "latencia_ms": [
+          12941.966
+        ],
+        "trace_ids": [
+          "c035fb6b32567a15ec00cfa2fa9641da"
+        ],
+        "completa": true
+      },
+      "35bb4b07-4b25-4396-b597-906d995c1666": {
+        "trazas": 1,
+        "costo_usd": 0.0012929999999999999,
+        "tokens": 7348.0,
+        "latencia_ms": [
+          12824.561
+        ],
+        "trace_ids": [
+          "1bf616fd6acfd7d2ee8bb044aac6bb26"
+        ],
+        "completa": true
+      },
+      "6563ef1e-05f2-4baf-8232-30a628b529d3": {
+        "trazas": 1,
+        "costo_usd": 0.00124485,
+        "tokens": 7605.0,
+        "latencia_ms": [
+          11589.176
+        ],
+        "trace_ids": [
+          "a05fe8310048d82dd01298ccb2f419c1"
+        ],
+        "completa": true
+      },
+      "66c4cdf6-3735-423c-befa-937d852afac7": {
+        "trazas": 1,
+        "costo_usd": 0.0012430499999999999,
+        "tokens": 7571.0,
+        "latencia_ms": [
+          11211.921999999999
+        ],
+        "trace_ids": [
+          "9f0fcb3a89261d4146b9607fdd18caca"
+        ],
+        "completa": true
+      },
+      "b30a8484-75cf-47a8-96e6-8358961ee745": {
+        "trazas": 1,
+        "costo_usd": 0.00147315,
+        "tokens": 8673.0,
+        "latencia_ms": [
+          13458.458999999999
+        ],
+        "trace_ids": [
+          "59ee1dabf07136718afd38c5173d517e"
+        ],
+        "completa": true
+      },
+      "20bec012-fbfd-4d03-ad0c-f0989ad67727": {
+        "trazas": 1,
+        "costo_usd": 0.0014964,
+        "tokens": 10252.0,
+        "latencia_ms": [
+          14514.738
+        ],
+        "trace_ids": [
+          "da9d7855b9c5fc4e5f97aeb9d3c9aaf4"
+        ],
+        "completa": true
+      },
+      "89f6a756-a736-4734-9dd6-90546f2c1d7e": {
+        "trazas": 1,
+        "costo_usd": 0.001212,
+        "tokens": 7357.0,
+        "latencia_ms": [
+          11366.524
+        ],
+        "trace_ids": [
+          "add3c20572ef389a853de73f27f82b60"
+        ],
+        "completa": true
+      },
+      "13271d2e-6f3d-4fbd-9fed-9aa374c99c2c": {
+        "trazas": 1,
+        "costo_usd": 0.00124485,
+        "tokens": 7605.0,
+        "latencia_ms": [
+          11070.458
+        ],
+        "trace_ids": [
+          "5b6d702c930f51a94c5a29d4d1d66602"
+        ],
+        "completa": true
+      },
+      "55091cc6-b8d3-46e1-90a0-8d8cbb4e6184": {
+        "trazas": 1,
+        "costo_usd": 0.00135195,
+        "tokens": 7603.0,
+        "latencia_ms": [
+          12322.727
+        ],
+        "trace_ids": [
+          "96fe4eab701777e8d4a1e8de311c6c01"
+        ],
+        "completa": true
+      }
+    },
+    "ventana": {
+      "start": "2026-10-26T19:17:54.571335+00:00",
+      "end": "2026-10-26T19:18:52.341425+00:00"
+    },
+    "proyecto": {
+      "traceCount": 20,
+      "p50": 12983.1505,
+      "p95": 14535.516749999999,
+      "costSummary": {
+        "total": {
+          "cost": 0.028322999999999997,
+          "tokens": 165758.0
+        }
+      }
+    },
+    "desglose": {
+      "agentes": {
+        "agente_sintesis": {
+          "ejecuciones": 20,
+          "llamadas_llm": 20,
+          "tokens": 9104,
+          "costo_usd": 0.0019182000000000001,
+          "tiempo_ms": 27659.845999999998,
+          "tiempo_llm_ms": 27444.423
+        },
+        "agente_supervisor": {
+          "ejecuciones": 60,
+          "llamadas_llm": 60,
+          "tokens": 61024,
+          "costo_usd": 0.0105702,
+          "tiempo_ms": 100578.37199999997,
+          "tiempo_llm_ms": 99820.24400000002
+        },
+        "agente_analista": {
+          "ejecuciones": 20,
+          "llamadas_llm": 40,
+          "tokens": 34066,
+          "costo_usd": 0.006109800000000003,
+          "tiempo_ms": 53794.936,
+          "tiempo_llm_ms": 53250.992000000006
+        },
+        "agente_investigador": {
+          "ejecuciones": 20,
+          "llamadas_llm": 40,
+          "tokens": 61564,
+          "costo_usd": 0.009724800000000002,
+          "tiempo_ms": 72862.057,
+          "tiempo_llm_ms": 69920.46200000001
+        }
+      },
+      "tiempo_trazas_ms": 256334.75900000005,
+      "tiempo_llm_ms": 250436.12099999987
+    }
+  }
+}

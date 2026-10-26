@@ -1,0 +1,260 @@
+{
+  "k": 5,
+  "modelo_embeddings": "text-embedding-3-small",
+  "resultados": {
+    "solo BM25": {
+      "acierto_1": 0.6,
+      "acierto_k": 0.75,
+      "mrr": 0.6625,
+      "filas": [
+        {
+          "pregunta": "Latin NCAP protección ocupante adulto Nivus",
+          "esperado": "nivus.md · Seguridad",
+          "posicion": 1,
+          "primero": "nivus.md · Seguridad y calificación Latin NCAP"
+        },
+        {
+          "pregunta": "¿Qué tan seguro es el Tera en un choque?",
+          "esperado": "tera.md · Seguridad",
+          "posicion": null,
+          "primero": "tera.md · Producción y ventas"
+        },
+        {
+          "pregunta": "¿Dónde se fabrica el Taos?",
+          "esperado": "taos.md · Plataforma",
+          "posicion": null,
+          "primero": "taos.md · Descripción general"
+        },
+        {
+          "pregunta": "capacidad de baúl de la versión sedán del Polo",
+          "esperado": "virtus.md · Dimensiones",
+          "posicion": 4,
+          "primero": "polo.md · Versiones y equipamiento (gama región / Argentina-México)"
+        },
+        {
+          "pregunta": "¿Qué autos compiten con el Nivus?",
+          "esperado": "nivus.md · Rivales",
+          "posicion": null,
+          "primero": "nivus.md · Historia y generaciones"
+        },
+        {
+          "pregunta": "¿Cuántos años de garantía tiene la Saveiro?",
+          "esperado": "saveiro.md · Garantía",
+          "posicion": 1,
+          "primero": "saveiro.md · Garantía"
+        },
+        {
+          "pregunta": "¿En qué colores viene el Tera?",
+          "esperado": "tera.md · Colores",
+          "posicion": 1,
+          "primero": "tera.md · Colores disponibles"
+        },
+        {
+          "pregunta": "¿Por qué dejó de venderse el Vento?",
+          "esperado": "vento.md · Historia",
+          "posicion": null,
+          "primero": "vento.md · Descripción general"
+        },
+        {
+          "pregunta": "¿Cuántas unidades del Tera se fabricaron y vendieron?",
+          "esperado": "tera.md · Producción",
+          "posicion": 1,
+          "primero": "tera.md · Producción y ventas"
+        },
+        {
+          "pregunta": "pantalla multimedia y Apple CarPlay del Nivus",
+          "esperado": "nivus.md · Infotenimiento",
+          "posicion": 1,
+          "primero": "nivus.md · Infotenimiento y conectividad"
+        },
+        {
+          "pregunta": "largo y distancia entre ejes del Virtus",
+          "esperado": "virtus.md · Dimensiones",
+          "posicion": 1,
+          "primero": "virtus.md · Dimensiones"
+        },
+        {
+          "pregunta": "¿Sobre qué plataforma está construido el Polo?",
+          "esperado": "polo.md · Plataforma",
+          "posicion": 2,
+          "primero": "polo.md · Posicionamiento en la gama"
+        },
+        {
+          "pregunta": "estrellas en las pruebas de choque del Taos",
+          "esperado": "taos.md · Seguridad",
+          "posicion": 1,
+          "primero": "taos.md · Seguridad y calificación Latin NCAP"
+        },
+        {
+          "pregunta": "¿Cuándo salió la primera generación de la Saveiro?",
+          "esperado": "saveiro.md · Historia",
+          "posicion": 1,
+          "primero": "saveiro.md · Historia y generaciones"
+        },
+        {
+          "pregunta": "¿Qué lugar ocupa el Virtus dentro de la gama Volkswagen?",
+          "esperado": "virtus.md · Posicionamiento",
+          "posicion": null,
+          "primero": "virtus.md · Descripción general"
+        },
+        {
+          "pregunta": "¿Qué versiones del Taos se venden?",
+          "esperado": "taos.md · Versiones",
+          "posicion": 1,
+          "primero": "taos.md · Versiones y equipamiento (renovación 2026, mercado regional)"
+        },
+        {
+          "pregunta": "airbags de la Saveiro",
+          "esperado": "saveiro.md · Seguridad",
+          "posicion": 1,
+          "primero": "saveiro.md · Seguridad"
+        },
+        {
+          "pregunta": "¿Qué motores tenían los Vento de generaciones anteriores?",
+          "esperado": "vento.md · Versiones mecánicas",
+          "posicion": 1,
+          "primero": "vento.md · Versiones mecánicas históricas (generaciones anteriores)"
+        },
+        {
+          "pregunta": "conectividad del Tera con el celular",
+          "esperado": "tera.md · Infotenimiento",
+          "posicion": 1,
+          "primero": "tera.md · Infotenimiento y conectividad"
+        },
+        {
+          "pregunta": "¿Cómo le fue al Polo en las pruebas de choque?",
+          "esperado": "polo.md · Seguridad",
+          "posicion": 2,
+          "primero": "polo.md · Historia y generaciones"
+        }
+      ]
+    },
+    "híbrido": {
+      "acierto_1": 0.6,
+      "acierto_k": 0.85,
+      "mrr": 0.7016666666666667,
+      "filas": [
+        {
+          "pregunta": "Latin NCAP protección ocupante adulto Nivus",
+          "esperado": "nivus.md · Seguridad",
+          "posicion": 1,
+          "primero": "nivus.md · Seguridad y calificación Latin NCAP"
+        },
+        {
+          "pregunta": "¿Qué tan seguro es el Tera en un choque?",
+          "esperado": "tera.md · Seguridad",
+          "posicion": null,
+          "primero": "tera.md · Producción y ventas"
+        },
+        {
+          "pregunta": "¿Dónde se fabrica el Taos?",
+          "esperado": "taos.md · Plataforma",
+          "posicion": 5,
+          "primero": "taos.md · Descripción general"
+        },
+        {
+          "pregunta": "capacidad de baúl de la versión sedán del Polo",
+          "esperado": "virtus.md · Dimensiones",
+          "posicion": null,
+          "primero": "polo.md · Versiones y equipamiento (gama región / Argentina-México)"
+        },
+        {
+          "pregunta": "¿Qué autos compiten con el Nivus?",
+          "esperado": "nivus.md · Rivales",
+          "posicion": 2,
+          "primero": "nivus.md · Historia y generaciones"
+        },
+        {
+          "pregunta": "¿Cuántos años de garantía tiene la Saveiro?",
+          "esperado": "saveiro.md · Garantía",
+          "posicion": 1,
+          "primero": "saveiro.md · Garantía"
+        },
+        {
+          "pregunta": "¿En qué colores viene el Tera?",
+          "esperado": "tera.md · Colores",
+          "posicion": 1,
+          "primero": "tera.md · Colores disponibles"
+        },
+        {
+          "pregunta": "¿Por qué dejó de venderse el Vento?",
+          "esperado": "vento.md · Historia",
+          "posicion": null,
+          "primero": "vento.md · Descripción general"
+        },
+        {
+          "pregunta": "¿Cuántas unidades del Tera se fabricaron y vendieron?",
+          "esperado": "tera.md · Producción",
+          "posicion": 1,
+          "primero": "tera.md · Producción y ventas"
+        },
+        {
+          "pregunta": "pantalla multimedia y Apple CarPlay del Nivus",
+          "esperado": "nivus.md · Infotenimiento",
+          "posicion": 1,
+          "primero": "nivus.md · Infotenimiento y conectividad"
+        },
+        {
+          "pregunta": "largo y distancia entre ejes del Virtus",
+          "esperado": "virtus.md · Dimensiones",
+          "posicion": 1,
+          "primero": "virtus.md · Dimensiones"
+        },
+        {
+          "pregunta": "¿Sobre qué plataforma está construido el Polo?",
+          "esperado": "polo.md · Plataforma",
+          "posicion": 2,
+          "primero": "polo.md · Posicionamiento en la gama"
+        },
+        {
+          "pregunta": "estrellas en las pruebas de choque del Taos",
+          "esperado": "taos.md · Seguridad",
+          "posicion": 1,
+          "primero": "taos.md · Seguridad y calificación Latin NCAP"
+        },
+        {
+          "pregunta": "¿Cuándo salió la primera generación de la Saveiro?",
+          "esperado": "saveiro.md · Historia",
+          "posicion": 1,
+          "primero": "saveiro.md · Historia y generaciones"
+        },
+        {
+          "pregunta": "¿Qué lugar ocupa el Virtus dentro de la gama Volkswagen?",
+          "esperado": "virtus.md · Posicionamiento",
+          "posicion": 3,
+          "primero": "virtus.md · Descripción general"
+        },
+        {
+          "pregunta": "¿Qué versiones del Taos se venden?",
+          "esperado": "taos.md · Versiones",
+          "posicion": 2,
+          "primero": "taos.md · Descripción general"
+        },
+        {
+          "pregunta": "airbags de la Saveiro",
+          "esperado": "saveiro.md · Seguridad",
+          "posicion": 1,
+          "primero": "saveiro.md · Seguridad"
+        },
+        {
+          "pregunta": "¿Qué motores tenían los Vento de generaciones anteriores?",
+          "esperado": "vento.md · Versiones mecánicas",
+          "posicion": 1,
+          "primero": "vento.md · Versiones mecánicas históricas (generaciones anteriores)"
+        },
+        {
+          "pregunta": "conectividad del Tera con el celular",
+          "esperado": "tera.md · Infotenimiento",
+          "posicion": 1,
+          "primero": "tera.md · Infotenimiento y conectividad"
+        },
+        {
+          "pregunta": "¿Cómo le fue al Polo en las pruebas de choque?",
+          "esperado": "polo.md · Seguridad",
+          "posicion": 1,
+          "primero": "polo.md · Seguridad y calificación Latin NCAP (dos resultados distintos, según generación)"
+        }
+      ]
+    }
+  }
+}
